@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#1565c0">
+
+  <title>CIVA | Edit Profile</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="edit.css">
+
+</head>
+
+
+<body>
+
+  <main class="edit-page">
+
+    <!-- HEADER -->
+
+    <header class="edit-header">
+
+      <a href="profile.html" class="edit-back" aria-label="Back to Profile">
+        ←
+      </a>
+
+      <div>
+
+        <p class="edit-eyebrow">
+          ACCOUNT
+        </p>
+
+        <h1>
+          Edit Profile
+        </h1>
+
+      </div>
+
+    </header>
+
+
+    <!-- PROFILE PREVIEW -->
+
+    <section class="edit-profile-preview">
+
+      <div class="edit-avatar-wrapper">
+
+        <img id="editProfileImage" src="profile-placeholder.jpg" alt="Profile picture" class="edit-profile-image">
+
+      </div>
+
+      <button type="button" id="changeProfileImage" class="edit-image-button">
+        Change Photo
+      </button>
+
+      <input type="file" id="profileImageInput" accept="image/*" hidden>
+
+    </section>
+
+
+    <!-- EDIT FORM -->
+
+    <section class="edit-form-section">
+
+      <form id="editProfileForm">
+
+        <div class="edit-field">
+
+          <label for="editName">
+            Name
+          </label>
+
+          <input type="text" id="editName" name="name" maxlength="50" autocomplete="name" placeholder="Enter your name"
+            required>
+
+        </div>
+
+
+        <div class="edit-field">
+
+          <label for="editUsername">
+            Username
+          </label>
+
+          <input type="text" id="editUsername" name="username" maxlength="30" autocomplete="username"
+            placeholder="@username">
+
+        </div>
+
+
+        <div class="edit-field">
+
+          <label for="editBio">
+            Bio
+          </label>
+
+          <textarea id="editBio" name="bio" maxlength="160" rows="4"
+            placeholder="Tell people a little about yourself..."></textarea>
+
+          <span id="bioCount" class="edit-character-count">
+            0/160
+          </span>
+
+        </div>
+
+
+        <p id="editMessage" class="edit-message" role="status" aria-live="polite"></p>
+
+
+        <div class="edit-actions">
+
+          <a href="profile.html" class="edit-cancel-button">
+            Cancel
+          </a>
+
+          <button type="submit" class="edit-save-button">
+            Save Changes
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="civa-data.js"></script>
+  <script src="edit.js"></script>
+
+</body>
+
+</html>
