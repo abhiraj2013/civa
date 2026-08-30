@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#1565c0">
+
+  <meta name="description" content="Create your CIVA account.">
+
+  <title>CIVA | Create Account</title>
+
+  <link rel="icon" type="image/png" href="civa.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="responsive.css">
+
+  <link rel="stylesheet" href="signup.css">
+
+</head>
+
+
+<body>
+
+  <div class="app">
+
+
+    <header class="top-header">
+
+      <div class="header-inner">
+
+        <div class="header-left">
+
+          <a href="home.html" aria-label="CIVA Home">
+
+            <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+          </a>
+
+        </div>
+
+
+        <div class="header-center">
+
+          <a href="home.html" class="header-title">
+
+            CIVA
+
+          </a>
+
+        </div>
+
+
+        <div class="header-right">
+
+          <button class="icon-button" id="navButton" type="button" aria-label="Open navigation" aria-controls="navMenu"
+            aria-expanded="false">
+
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
+
+              <line x1="4" y1="6" x2="20" y2="6">
+              </line>
+
+              <line x1="4" y1="12" x2="20" y2="12">
+              </line>
+
+              <line x1="4" y1="18" x2="20" y2="18">
+              </line>
+
+            </svg>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <div class="civa-nav-overlay" id="navOverlay" aria-hidden="true">
+    </div>
+
+
+    <aside class="civa-nav-menu" id="navMenu" aria-hidden="true">
+
+      <div class="civa-nav-header">
+
+        <div>
+
+          <p class="civa-nav-label">
+            CIVA
+          </p>
+
+          <h2 class="civa-nav-title">
+            Navigation
+          </h2>
+
+        </div>
+
+
+        <button class="icon-button" id="navCloseButton" type="button" aria-label="Close navigation">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+
+            <line x1="6" y1="6" x2="18" y2="18">
+            </line>
+
+            <line x1="18" y1="6" x2="6" y2="18">
+            </line>
+
+          </svg>
+
+        </button>
+
+      </div>
+
+
+      <nav class="civa-nav-links" aria-label="CIVA navigation">
+
+        <a href="home.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M12 3l1.9 5.9H20l-4.9 3.6 1.9 5.9-5-3.6-5 3.6 1.9-5.9L4 8.9h6.1L12 3z">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Trending Posts
+          </span>
+
+        </a>
+
+
+        <a href="community.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2">
+              </path>
+
+              <circle cx="10" cy="7" r="4">
+              </circle>
+
+              <path d="M17 11a4 4 0 0 0 0-8">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Trending Communities
+          </span>
+
+        </a>
+
+
+        <a href="news.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M4 4h16v16H4z">
+              </path>
+
+              <path d="M8 8h8">
+              </path>
+
+              <path d="M8 12h8">
+              </path>
+
+              <path d="M8 16h5">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Latest News
+          </span>
+
+        </a>
+
+
+        <a href="creators.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <circle cx="12" cy="8" r="4">
+              </circle>
+
+              <path d="M5 21a7 7 0 0 1 14 0">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Top Creators
+          </span>
+
+        </a>
+
+
+        <a href="leaders.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M6 4h12v5a6 6 0 0 1-12 0V4z">
+              </path>
+
+              <path d="M9 20h6">
+              </path>
+
+              <path d="M12 15v5">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Top Leaders
+          </span>
+
+        </a>
+
+
+        <a href="about.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <circle cx="12" cy="12" r="9">
+              </circle>
+
+              <line x1="12" y1="11" x2="12" y2="16">
+              </line>
+
+              <circle cx="12" cy="7.5" r="0.7" fill="currentColor" stroke="none">
+              </circle>
+
+            </svg>
+
+          </span>
+
+          <span>
+            About Us
+          </span>
+
+        </a>
+
+
+        <a href="licenses.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M12 3l8 3v6c0 4.8-3.4 7.8-8 9-4.6-1.2-8-4.2-8-9V6l8-3z">
+              </path>
+
+              <path d="M9 12l2 2 4-4">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Licenses
+          </span>
+
+        </a>
+
+      </nav>
+
+
+      <div class="civa-nav-footer">
+
+        <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+        <p>
+          Simple. Useful. Civic.
+        </p>
+
+      </div>
+
+    </aside>
+
+
+    <main class="signup-main">
+
+      <div class="signup-container">
+
+
+        <section class="signup-header">
+
+          <div class="signup-icon">
+
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+
+              <circle cx="9" cy="8" r="4">
+              </circle>
+
+              <path d="M3 21a6 6 0 0 1 12 0">
+              </path>
+
+              <path d="M19 8v6">
+              </path>
+
+              <path d="M16 11h6">
+              </path>
+
+            </svg>
+
+          </div>
+
+          <p class="signup-eyebrow">
+            WELCOME TO CIVA
+          </p>
+
+          <h1>
+            Create your account
+          </h1>
+
+          <p>
+            Join CIVA and take part in responsible civic participation.
+          </p>
+
+        </section>
+
+
+        <form class="signup-form" id="signupForm" novalidate>
+
+
+          <div class="signup-profile">
+
+            <div class="signup-profile-image">
+
+              <img id="profilePreview" src="profile-placeholder.jpg" alt="Default profile image">
+
+            </div>
+
+            <div class="signup-profile-content">
+
+              <h2>
+                Profile picture
+              </h2>
+
+              <p>
+                Optional. You can add one later.
+              </p>
+
+              <label for="profileImage" class="signup-upload-button">
+
+                Choose image
+
+              </label>
+
+              <input type="file" id="profileImage" name="profileImage" accept="image/png,image/jpeg,image/webp" hidden>
+
+            </div>
+
+          </div>
+
+
+          <div class="signup-field">
+
+            <label for="fullName">
+              Full name
+            </label>
+
+            <input type="text" id="fullName" name="fullName" autocomplete="name" maxlength="80" required>
+
+            <small class="signup-error" id="fullNameError">
+            </small>
+
+          </div>
+
+
+          <div class="signup-field">
+
+            <label for="email">
+              Email address
+            </label>
+
+            <input type="email" id="email" name="email" autocomplete="email" maxlength="254" required>
+
+            <small class="signup-error" id="emailError">
+            </small>
+
+          </div>
+
+          <div class="signup-field">
+
+            <label for="dateOfBirth">
+              Date of birth
+            </label>
+
+            <input type="text" id="dateOfBirth" name="dateOfBirth" placeholder="DD/MM/YYYY" inputmode="numeric"
+              autocomplete="bday" maxlength="10" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}" required>
+
+            <small>
+              Enter your date of birth as DD/MM/YYYY.
+            </small>
+
+            <small class="signup-error" id="dateOfBirthError">
+            </small>
+
+          </div>
+
+          <div class="signup-field">
+
+            <label for="password">
+              Password
+            </label>
+
+            <div class="signup-password-wrap">
+
+              <input type="password" id="password" name="password" autocomplete="new-password" minlength="8"
+                maxlength="128" required>
+
+              <button type="button" class="password-toggle" data-target="password" aria-label="Show password">
+
+                Show
+
+              </button>
+
+            </div>
+
+            <div class="password-strength">
+
+              <div class="password-strength-bar" id="passwordStrengthBar">
+              </div>
+
+            </div>
+
+            <small id="passwordStrengthText">
+              Use at least 8 characters.
+            </small>
+
+            <small class="signup-error" id="passwordError">
+            </small>
+
+          </div>
+
+
+          <div class="signup-field">
+
+            <label for="confirmPassword">
+              Confirm password
+            </label>
+
+            <div class="signup-password-wrap">
+
+              <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password"
+                minlength="8" maxlength="128" required>
+
+              <button type="button" class="password-toggle" data-target="confirmPassword" aria-label="Show password">
+
+                Show
+
+              </button>
+
+            </div>
+
+            <small class="signup-error" id="confirmPasswordError">
+            </small>
+
+          </div>
+
+
+          <div class="signup-agreement">
+
+            <label>
+
+              <input type="checkbox" id="terms" name="terms" required>
+
+              <span>
+                I agree to the CIVA
+                <a href="terms.html">
+                  Terms
+                </a>
+                and understand the platform's
+                <a href="guidelines.html">
+                  community rules
+                </a>.
+              </span>
+
+            </label>
+
+            <small class="signup-error" id="termsError">
+            </small>
+
+          </div>
+
+
+          <div class="signup-form-message" id="signupMessage" role="alert" aria-live="polite">
+          </div>
+
+
+          <button type="submit" class="signup-submit" id="signupSubmit">
+
+            <span>
+              Create Account
+            </span>
+
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <path d="M5 12h14">
+              </path>
+
+              <path d="M13 6l6 6-6 6">
+              </path>
+
+            </svg>
+
+          </button>
+
+
+        </form>
+
+
+        <div class="signup-login">
+
+          <p>
+            Already have an account?
+          </p>
+
+          <a href="login.html">
+
+            Sign in
+
+          </a>
+
+        </div>
+
+
+        <div class="signup-security">
+
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+
+            <path d="M12 3l8 3v6c0 4.8-3.4 7.8-8 9-4.6-1.2-8-4.2-8-9V6l8-3z">
+            </path>
+
+            <path d="M9 12l2 2 4-4">
+            </path>
+
+          </svg>
+
+          <p>
+            Your password should never be shared with anyone.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </main>
+
+
+    <nav class="bottom-navigation" aria-label="Main navigation">
+
+
+      <a href="home.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M3 10.8L12 3l9 7.8">
+            </path>
+
+            <path d="M5.5 9.5V21h13V9.5">
+            </path>
+
+            <path d="M9.5 21v-6h5v6">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Home
+        </span>
+
+      </a>
+
+
+      <a href="community.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="9" cy="8" r="3">
+            </circle>
+
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0">
+            </path>
+
+            <path d="M16 5.5a3 3 0 0 1 0 5.8">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Community
+        </span>
+
+      </a>
+
+
+      <a href="account.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="12" cy="8" r="4">
+            </circle>
+
+            <path d="M5 21a7 7 0 0 1 14 0">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Account
+        </span>
+
+      </a>
+
+
+    </nav>
+
+
+  </div>
+
+
+  <script src="navigation.js"></script>
+  <script src="signup.js"></script>
+
+</body>
+
+</html>
