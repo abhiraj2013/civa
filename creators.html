@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <meta name="theme-color" content="#1565c0">
+
+  <meta name="description" content="Discover CIVA creators ranked by support received for their public contributions.">
+
+  <title>CIVA | Top Creators</title>
+
+  <link rel="icon" type="image/png" href="civa.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="creators.css">
+
+</head>
+
+
+<body>
+
+  <div class="app">
+
+
+    <!-- =========================
+         TOP HEADER
+    ========================= -->
+
+    <header class="top-header">
+
+      <div class="header-inner">
+
+        <div class="header-left">
+
+          <a href="home.html" aria-label="CIVA Home">
+
+            <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+          </a>
+
+        </div>
+
+
+        <div class="header-center">
+
+          <a href="home.html" class="header-title">
+
+            CIVA
+
+          </a>
+
+        </div>
+
+
+        <div class="header-right">
+
+          <button class="icon-button" id="navButton" type="button" aria-label="Open navigation" aria-controls="navMenu"
+            aria-expanded="false">
+
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
+
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+
+            </svg>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================
+         NAV OVERLAY
+    ========================= -->
+
+    <div class="civa-nav-overlay" id="navOverlay" aria-hidden="true">
+    </div>
+
+
+    <!-- =========================
+         SIDE NAVIGATION
+    ========================= -->
+
+    <aside class="civa-nav-menu" id="navMenu" aria-hidden="true">
+
+      <div class="civa-nav-header">
+
+        <div>
+
+          <p class="civa-nav-label">
+            CIVA
+          </p>
+
+          <h2 class="civa-nav-title">
+            Navigation
+          </h2>
+
+        </div>
+
+
+        <button class="icon-button" id="navCloseButton" type="button" aria-label="Close navigation">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+
+          </svg>
+
+        </button>
+
+      </div>
+
+
+      <nav class="civa-nav-links" aria-label="CIVA navigation">
+
+
+        <a href="home.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M12 3l1.9 5.9H20l-4.9 3.6 1.9 5.9-5-3.6-5 3.6 1.9-5.9L4 8.9h6.1L12 3z"></path>
+
+            </svg>
+
+          </span>
+
+          <span>Trending Posts</span>
+
+        </a>
+
+
+        <a href="community.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path>
+              <circle cx="10" cy="7" r="4"></circle>
+              <path d="M17 11a4 4 0 0 0 0-8"></path>
+              <path d="M21 21v-2a4 4 0 0 0-3-3.87"></path>
+
+            </svg>
+
+          </span>
+
+          <span>Trending Communities Protests</span>
+
+        </a>
+
+
+        <a href="news.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M4 4h16v16H4z"></path>
+              <path d="M8 8h8"></path>
+              <path d="M8 12h8"></path>
+              <path d="M8 16h5"></path>
+
+            </svg>
+
+          </span>
+
+          <span>Latest News</span>
+
+        </a>
+
+
+        <a href="creators.html" class="civa-nav-link active" aria-current="page">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M5 21a7 7 0 0 1 14 0"></path>
+
+            </svg>
+
+          </span>
+
+          <span>Top Creators</span>
+
+        </a>
+
+
+        <a href="leaders.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M6 4h12v5a6 6 0 0 1-12 0V4z"></path>
+              <path d="M9 20h6"></path>
+              <path d="M12 15v5"></path>
+
+            </svg>
+
+          </span>
+
+          <span>Top Leaders</span>
+
+        </a>
+
+
+        <a href="about.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <circle cx="12" cy="12" r="9"></circle>
+              <line x1="12" y1="11" x2="12" y2="16"></line>
+
+            </svg>
+
+          </span>
+
+          <span>About Us</span>
+
+        </a>
+
+
+        <a href="licenses.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M12 3l8 3v6c0 4.8-3.4 7.8-8 9-4.6-1.2-8-4.2-8-9V6l8-3z"></path>
+              <path d="M9 12l2 2 4-4"></path>
+
+            </svg>
+
+          </span>
+
+          <span>Licenses</span>
+
+        </a>
+
+      </nav>
+
+
+      <div class="civa-nav-footer">
+
+        <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+        <p>
+          Simple. Useful. Civic.
+        </p>
+
+      </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN
+    ========================= -->
+
+    <main class="creators-main">
+
+      <div class="creators-container">
+
+
+        <section class="creators-heading">
+
+          <p class="creators-eyebrow">
+            COMMUNITY CONTRIBUTORS
+          </p>
+
+          <h1>
+            Top Creators
+          </h1>
+
+          <p>
+            Discover CIVA creators ranked by the total support received for their public contributions.
+          </p>
+
+        </section>
+
+
+        <!-- SEARCH -->
+
+        <section class="creator-search-section">
+
+          <label class="creator-search" for="creatorSearch">
+
+            <span class="creator-search-icon">
+
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="M20 20l-4-4"></path>
+
+              </svg>
+
+            </span>
+
+            <input id="creatorSearch" type="search" placeholder="Search creators by name..." autocomplete="off">
+
+          </label>
+
+        </section>
+
+        <section class="your-creator-ranking" id="yourCreatorRanking">
+
+          <div class="your-creator-ranking-icon">
+
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <circle cx="12" cy="8" r="4">
+              </circle>
+
+              <path d="M5 21a7 7 0 0 1 14 0">
+              </path>
+
+            </svg>
+
+          </div>
+
+
+          <div class="your-creator-ranking-content">
+
+            <p class="your-creator-ranking-label">
+              Your Creator Profile
+            </p>
+
+            <a href="account.html" id="yourCreatorProfileLink" class="your-creator-profile-link">
+
+              <h2 id="yourCreatorName">
+                Create an account to appear here
+              </h2>
+
+            </a>
+
+            <p id="yourCreatorRank">
+              Your creator ranking will appear here.
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- YOUR RANKING -->
+
+        <section class="your-ranking" id="yourRanking">
+
+          <div class="your-ranking-icon">
+
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M6 4h12v5a6 6 0 0 1-12 0V4z"></path>
+              <path d="M9 20h6"></path>
+              <path d="M12 15v5"></path>
+
+            </svg>
+
+          </div>
+
+
+          <div class="your-ranking-content">
+
+            <p class="your-ranking-label">
+              Your Ranking
+            </p>
+
+            <a href="account.html" id="yourRankLink" class="your-rank-link">
+
+              <h2 id="yourRank">
+                Create an account to see your ranking
+              </h2>
+
+            </a>
+
+            <p id="yourSupportCount">
+              Your support score will appear here after your account is created.
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- LEADERBOARD -->
+
+        <section class="leaderboard-section" aria-labelledby="leaderboardTitle">
+
+          <div class="leaderboard-header">
+
+            <div>
+
+              <h2 id="leaderboardTitle">
+                Creator Leaderboard
+              </h2>
+
+              <p>
+                Ranked by total support received.
+              </p>
+
+            </div>
+
+
+            <button type="button" class="leaderboard-refresh" id="creatorRefresh"
+              aria-label="Refresh creator leaderboard">
+
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                <path d="M20 11a8 8 0 0 0-14.9-3"></path>
+                <path d="M4 4v5h5"></path>
+
+                <path d="M4 13a8 8 0 0 0 14.9 3"></path>
+                <path d="M20 20v-5h-5"></path>
+
+              </svg>
+
+            </button>
+
+          </div>
+
+
+          <div class="creator-list" id="creatorList">
+
+
+            <!-- REAL USER CARDS WILL BE ADDED BY JS -->
+
+
+            <!-- DEMO CREATOR 1 -->
+
+            <article class="creator-card" data-creator-id="demo-creator-01" data-creator-name="Aarav Kumar"
+              data-support="12450" data-demo="true">
+
+              <div class="creator-rank">
+                #1
+              </div>
+
+              <div class="creator-avatar">
+
+                <img src="profile-placeholder.jpg" alt="Demo creator" width="56" height="56" loading="lazy">
+
+              </div>
+
+              <div class="creator-details">
+
+                <h3>
+                  Aarav Kumar
+                </h3>
+
+                <p class="creator-username">
+                  @aaravk
+                </p>
+
+                <p class="creator-support">
+                  <strong>12,450</strong> Supports
+                </p>
+
+                <small>
+                  Fake CIVA Creator — Demo
+                </small>
+
+              </div>
+
+            </article>
+
+
+            <!-- DEMO CREATOR 2 -->
+
+            <article class="creator-card" data-creator-id="demo-creator-02" data-creator-name="Ananya Singh"
+              data-support="9820" data-demo="true">
+
+              <div class="creator-rank">
+                #2
+              </div>
+
+              <div class="creator-avatar">
+
+                <img src="profile-placeholder.jpg" alt="Demo creator" width="56" height="56" loading="lazy">
+
+              </div>
+
+              <div class="creator-details">
+
+                <h3>
+                  Ananya Singh
+                </h3>
+
+                <p class="creator-username">
+                  @ananyas
+                </p>
+
+                <p class="creator-support">
+                  <strong>9,820</strong> Supports
+                </p>
+
+                <small>
+                  Fake CIVA Creator — Demo
+                </small>
+
+              </div>
+
+            </article>
+
+
+            <!-- DEMO CREATOR 3 -->
+
+            <article class="creator-card" data-creator-id="demo-creator-03" data-creator-name="Rohan Verma"
+              data-support="7640" data-demo="true">
+
+              <div class="creator-rank">
+                #3
+              </div>
+
+              <div class="creator-avatar">
+
+                <img src="profile-placeholder.jpg" alt="Demo creator" width="56" height="56" loading="lazy">
+
+              </div>
+
+              <div class="creator-details">
+
+                <h3>
+                  Rohan Verma
+                </h3>
+
+                <p class="creator-username">
+                  @rohanv
+                </p>
+
+                <p class="creator-support">
+                  <strong>7,640</strong> Supports
+                </p>
+
+                <small>
+                  Fake CIVA Creator — Demo
+                </small>
+
+              </div>
+
+            </article>
+
+
+            <!-- DEMO CREATOR 4 -->
+
+            <article class="creator-card" data-creator-id="demo-creator-04" data-creator-name="Priya Sharma"
+              data-support="6210" data-demo="true">
+
+              <div class="creator-rank">
+                #4
+              </div>
+
+              <div class="creator-avatar">
+
+                <img src="profile-placeholder.jpg" alt="Demo creator" width="56" height="56" loading="lazy">
+
+              </div>
+
+              <div class="creator-details">
+
+                <h3>
+                  Priya Sharma
+                </h3>
+
+                <p class="creator-username">
+                  @priyas
+                </p>
+
+                <p class="creator-support">
+                  <strong>6,210</strong> Supports
+                </p>
+
+                <small>
+                  Fake CIVA Creator — Demo
+                </small>
+
+              </div>
+
+            </article>
+            <div>
+
+              <h2>
+                How creator ranking works
+              </h2>
+
+              <p>
+                Creators are ranked according to the total support
+                received on their public contributions.
+              </p>
+
+              <p>
+                Only registered CIVA accounts can appear on the
+                creator leaderboard.
+              </p>
+
+            </div>
+
+        </section>
+
+
+      </div>
+
+    </main>
+
+
+    <!-- =========================
+         BOTTOM NAVIGATION
+    ========================= -->
+
+    <nav class="bottom-navigation" aria-label="Main navigation">
+
+
+      <a href="home.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+            <path d="M3 10.8L12 3l9 7.8"></path>
+
+            <path d="M5.5 9.5V21h13V9.5"></path>
+
+            <path d="M9.5 21v-6h5v6"></path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Home
+        </span>
+
+      </a>
+
+
+      <a href="community.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+            <circle cx="9" cy="8" r="3"></circle>
+
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0"></path>
+
+            <path d="M16 5.5a3 3 0 0 1 0 5.8"></path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Community
+        </span>
+
+      </a>
+
+
+      <a href="account.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+            <circle cx="12" cy="8" r="4"></circle>
+
+            <path d="M5 21a7 7 0 0 1 14 0"></path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Account
+        </span>
+
+      </a>
+
+
+    </nav>
+
+
+  </div>
+
+
+  <!-- =========================
+     SCRIPTS
+========================= -->
+
+  <script src="navigation.js"></script>
+
+  <script src="creators.js"></script>
+
+
+</body>
+
+</html>
