@@ -1,0 +1,264 @@
+/* =========================
+   CIVA SETTINGS
+========================= */
+
+.settings-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 16px 100px;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.settings-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  color: #1565c0;
+
+  font-size: 25px;
+}
+
+.settings-back:hover {
+  background: #f1f5f9;
+}
+
+.settings-eyebrow {
+  margin: 0 0 3px;
+
+  color: #1565c0;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.settings-header h1 {
+  margin: 0;
+
+  font-size: 25px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.settings-section {
+  margin-bottom: 26px;
+}
+
+.settings-section h2 {
+  margin: 0 0 10px;
+
+  font-size: 17px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.settings-card {
+  overflow: hidden;
+
+  border: 1px solid #e1e5eb;
+  border-radius: 14px;
+
+  background: #ffffff;
+}
+
+
+/* =========================
+   SETTING ITEM
+========================= */
+
+.settings-item {
+  width: 100%;
+  min-height: 68px;
+
+  padding: 14px 16px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  text-decoration: none;
+
+  color: inherit;
+
+  background: #ffffff;
+}
+
+.settings-item:hover {
+  background: #f8fafc;
+}
+
+.settings-item > div {
+  min-width: 0;
+}
+
+.settings-item strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 15px;
+}
+
+.settings-item span {
+  display: block;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  opacity: .65;
+}
+
+
+/* =========================
+   ARROW
+========================= */
+
+.settings-arrow {
+  flex-shrink: 0;
+
+  font-size: 25px !important;
+
+  line-height: 1 !important;
+
+  opacity: .5 !important;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.settings-button {
+  border: 0;
+
+  font: inherit;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.settings-divider {
+  height: 1px;
+
+  margin: 0 16px;
+
+  background: #e8ebef;
+}
+
+
+/* =========================
+   STATIC ITEMS
+========================= */
+
+.settings-static {
+  cursor: default;
+}
+
+.settings-static:hover {
+  background: #ffffff;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.settings-status {
+  flex-shrink: 0;
+
+  padding: 5px 9px;
+
+  border-radius: 8px;
+
+  background: #f1f5f9;
+
+  color: #1565c0;
+
+  font-size: 11px !important;
+
+  font-weight: 600;
+
+  opacity: 1 !important;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.settings-message {
+  min-height: 20px;
+
+  margin: 8px 0;
+
+  text-align: center;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .settings-page {
+    padding: 16px 14px 90px;
+  }
+
+  .settings-header h1 {
+    font-size: 22px;
+  }
+
+  .settings-item {
+    padding: 13px 14px;
+  }
+
+  .settings-item strong {
+    font-size: 14px;
+  }
+
+  .settings-item span {
+    font-size: 12px;
+  }
+
+}
