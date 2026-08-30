@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Contact CIVA for help and support.">
+
+  <meta name="theme-color" content="#0d6efd">
+
+  <title>CIVA | Contact & Help</title>
+
+  <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+
+  <main class="contact-page">
+
+    <section class="contact-container" aria-labelledby="contactTitle">
+
+
+      <a href="home.html" class="contact-brand" aria-label="CIVA Home">
+
+        <img src="civa.png" alt="CIVA" class="contact-brand-logo">
+
+        <span>CIVA</span>
+
+      </a>
+
+
+      <div class="contact-card">
+
+
+        <a href="login.html" class="contact-back">
+
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+            <path d="m15 18-6-6 6-6"></path>
+
+          </svg>
+
+          <span>
+            Back
+          </span>
+
+        </a>
+
+
+        <div class="contact-heading">
+
+          <p class="contact-label">
+            CIVA Help
+          </p>
+
+          <h1 id="contactTitle">
+            How can we help?
+          </h1>
+
+          <p class="contact-description">
+            Tell us what you need help with.
+            Please do not share passwords,
+            OTPs, or other sensitive information.
+          </p>
+
+        </div>
+
+
+        <form id="contactForm" class="contact-form" novalidate>
+
+
+          <div class="contact-field">
+
+            <label for="contactEmail">
+              Email address
+            </label>
+
+            <input type="email" id="contactEmail" name="email" placeholder="Enter your email" autocomplete="email"
+              inputmode="email" maxlength="254" required aria-describedby="contactEmailError">
+
+            <small id="contactEmailError" class="contact-error">
+            </small>
+
+          </div>
+
+
+          <div class="contact-field">
+
+            <label for="contactCategory">
+              What do you need help with?
+            </label>
+
+            <select id="contactCategory" name="category" required aria-describedby="contactCategoryError">
+
+              <option value="" selected disabled>
+                Select a category
+              </option>
+
+              <option value="account">
+                Account & Sign In
+              </option>
+
+              <option value="post">
+                Post or Content
+              </option>
+
+              <option value="community">
+                Community
+              </option>
+
+              <option value="report">
+                Report a Problem
+              </option>
+
+              <option value="technical">
+                Technical Issue
+              </option>
+
+              <option value="other">
+                Other
+              </option>
+
+            </select>
+
+            <small id="contactCategoryError" class="contact-error">
+            </small>
+
+          </div>
+
+
+          <div class="contact-field">
+
+            <label for="contactMessage">
+              Message
+            </label>
+
+            <textarea id="contactMessage" name="message" rows="6" maxlength="1000"
+              placeholder="Explain your issue clearly..." required aria-describedby="contactMessageError">
+            </textarea>
+
+            <div class="message-meta">
+
+              <small id="contactMessageError" class="contact-error">
+              </small>
+
+              <span id="messageCharacters">
+                0/1000
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <button type="submit" id="contactSubmit" class="contact-submit">
+
+            Send Message
+
+          </button>
+
+
+          <div id="contactMessageStatus" class="contact-status" role="status" aria-live="polite">
+          </div>
+
+        </form>
+
+
+        <div class="contact-safety-note">
+
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+            <path d="M12 3 5 6v5c0 4.6 2.8 8.5 7 10 4.2-1.5 7-5.4 7-10V6l-7-3Z">
+            </path>
+
+            <path d="m9 12 2 2 4-4"></path>
+
+          </svg>
+
+          <p>
+            CIVA will never ask you for your
+            password or OTP through this form.
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+      <p class="contact-footer">
+
+        <a href="home.html">
+          CIVA Home
+        </a>
+
+        <span aria-hidden="true">
+          •
+        </span>
+
+        <a href="login.html">
+          Sign In
+        </a>
+
+      </p>
+
+
+    </section>
+
+  </main>
+
+
+  <script src="contact.js"></script>
+
+</body>
+
+</html>
