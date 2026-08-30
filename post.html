@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Create a public problem post on CIVA.">
+
+  <meta name="theme-color" content="#0d6efd">
+
+  <title>CIVA | Create Post</title>
+
+  <link rel="stylesheet" href="post.css">
+
+</head>
+
+<body>
+
+  <div class="post-page">
+
+    <header class="post-header">
+
+      <div class="post-header-inner">
+
+        <a href="home.html" class="post-brand" aria-label="CIVA Home">
+
+          <img src="civa.png" alt="CIVA" class="post-brand-logo">
+
+          <span>CIVA</span>
+
+        </a>
+
+
+        <a href="profile.html" class="back-profile">
+
+          Profile
+
+        </a>
+
+      </div>
+
+    </header>
+
+
+    <main class="post-main">
+
+      <section class="post-intro" aria-labelledby="postTitle">
+
+        <p class="section-label">
+          CIVA Public Post
+        </p>
+
+        <h1 id="postTitle">
+          Share a Public Problem
+        </h1>
+
+        <p>
+          Describe a genuine public issue clearly so other people can understand it and support it.
+        </p>
+
+      </section>
+
+
+      <form id="postForm" class="post-form" novalidate>
+
+
+        <section class="form-section">
+
+          <div class="form-section-heading">
+
+            <h2>
+              Problem details
+            </h2>
+
+            <p>
+              Keep your information clear, factual and respectful.
+            </p>
+
+          </div>
+
+
+          <div class="form-field">
+
+            <label for="postTitleInput">
+              Problem title
+            </label>
+
+            <input type="text" id="postTitleInput" name="title"
+              placeholder="Example: Broken streetlight near the school" maxlength="120" autocomplete="off" required
+              aria-describedby="postTitleError">
+
+            <div class="field-meta">
+
+              <small class="field-error" id="postTitleError">
+              </small>
+
+              <small class="character-count" id="titleCount">
+                0/120
+              </small>
+
+            </div>
+
+          </div>
+
+
+          <div class="form-field">
+
+            <label for="category">
+              Category
+            </label>
+
+            <select id="category" name="category" required aria-describedby="categoryError">
+
+              <option value="" selected disabled>
+
+                Select a category
+
+              </option>
+
+              <option value="roads">
+                Roads & Transport
+              </option>
+
+              <option value="water">
+                Water & Sanitation
+              </option>
+
+              <option value="electricity">
+                Electricity
+              </option>
+
+              <option value="education">
+                Education
+              </option>
+
+              <option value="health">
+                Health & Public Services
+              </option>
+
+              <option value="environment">
+                Environment
+              </option>
+
+              <option value="safety">
+                Public Safety
+              </option>
+
+              <option value="cleanliness">
+                Cleanliness
+              </option>
+
+              <option value="other">
+                Other
+              </option>
+
+            </select>
+
+            <small class="field-error" id="categoryError">
+            </small>
+
+          </div>
+
+
+          <div class="form-field">
+
+            <label for="description">
+              Describe the problem
+            </label>
+
+            <textarea id="description" name="description" rows="7" maxlength="2000"
+              placeholder="Explain what the problem is, where it is happening and why it matters..." required
+              aria-describedby="descriptionError"></textarea>
+
+            <div class="field-meta">
+
+              <small class="field-error" id="descriptionError">
+              </small>
+
+              <small class="character-count" id="descriptionCount">
+                0/2000
+              </small>
+
+            </div>
+
+          </div>
+
+
+          <div class="form-field">
+
+            <label for="location">
+              General location
+            </label>
+
+            <input type="text" id="location" name="location" placeholder="Example: Panchdewari, Bihar" maxlength="120"
+              autocomplete="off" aria-describedby="locationError">
+
+            <small class="field-help">
+              Don't enter your house number, phone number or other private information.
+            </small>
+
+            <small class="field-error" id="locationError">
+            </small>
+
+          </div>
+
+        </section>
+        <section class="form-section">
+
+          <div class="form-section-heading">
+
+            <h2>
+              Add an image
+            </h2>
+
+            <p>
+              An image can help people understand the issue better.
+            </p>
+
+          </div>
+
+
+          <div class="image-upload-area">
+
+            <div class="image-preview" id="imagePreview">
+
+              <img src="post-placeholder.jpg" alt="Post image preview" id="previewImage">
+
+            </div>
+
+
+            <div class="image-upload-content">
+
+              <label for="postImage" class="upload-button">
+
+                Choose Image
+
+              </label>
+
+              <input type="file" id="postImage" name="image" accept="image/jpeg,image/png,image/webp" hidden>
+
+              <p>
+                JPG, PNG or WebP · Maximum 5 MB
+              </p>
+
+              <small>
+                Avoid uploading images containing private information.
+              </small>
+
+            </div>
+
+          </div>
+
+
+          <small class="field-error" id="imageError">
+          </small>
+
+        </section>
+
+
+        <section class="posting-guidelines">
+
+          <div class="guideline-icon">
+            !
+          </div>
+
+          <div>
+
+            <h2>
+              Before you post
+            </h2>
+
+            <ul>
+
+              <li>
+                Share genuine public problems.
+              </li>
+
+              <li>
+                Do not post private personal information.
+              </li>
+
+              <li>
+                Keep your description respectful and factual.
+              </li>
+
+              <li>
+                Do not use CIVA to threaten, harass or target people.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </section>
+
+
+        <div class="post-message" id="postMessage" role="status" aria-live="polite">
+        </div>
+
+
+        <div class="post-actions">
+
+          <a href="profile.html" class="cancel-button">
+
+            Cancel
+
+          </a>
+
+
+          <button type="submit" class="publish-button" id="publishButton">
+
+            Publish Post
+
+          </button>
+
+        </div>
+
+      </form>
+
+    </main>
+
+
+    <nav class="bottom-navigation" aria-label="Main navigation">
+
+      <a href="home.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M3 10.8L12 3l9 7.8"></path>
+
+            <path d="M5.5 9.5V21h13V9.5"></path>
+
+            <path d="M9.5 21v-6h5v6"></path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Home
+        </span>
+
+      </a>
+
+
+      <a href="community.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="9" cy="8" r="3">
+            </circle>
+
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0">
+            </path>
+
+            <path d="M16 5.5a3 3 0 0 1 0 5.8">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Community
+        </span>
+
+      </a>
+
+
+      <a href="account.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="12" cy="8" r="4">
+            </circle>
+
+            <path d="M5 21a7 7 0 0 1 14 0">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Account
+        </span>
+
+      </a>
+
+    </nav>
+
+  </div>
+
+
+  <script src="navigation.js"></script>
+  <script src="post.js"></script>
+
+</body>
+
+</html>
