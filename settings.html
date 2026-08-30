@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#1565c0"
+  >
+
+  <title>CIVA | Settings</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="settings.css">
+
+</head>
+
+
+<body>
+
+  <main class="settings-page">
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="settings-header">
+
+      <a
+        href="profile.html"
+        class="settings-back"
+        aria-label="Back to Profile"
+      >
+        ←
+      </a>
+
+      <div>
+
+        <p class="settings-eyebrow">
+          ACCOUNT
+        </p>
+
+        <h1>
+          Settings
+        </h1>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================
+         ACCOUNT
+    ========================== -->
+
+    <section class="settings-section">
+
+      <h2>
+        Account
+      </h2>
+
+      <div class="settings-card">
+
+        <a
+          href="edit.html"
+          class="settings-item"
+        >
+
+          <div>
+
+            <strong>
+              Edit Profile
+            </strong>
+
+            <span>
+              Change your name, username, bio and photo
+            </span>
+
+          </div>
+
+          <span class="settings-arrow">
+            ›
+          </span>
+
+        </a>
+
+
+        <div class="settings-divider"></div>
+
+
+        <button
+          type="button"
+          class="settings-item settings-button"
+          id="clearLocalDataButton"
+        >
+
+          <div>
+
+            <strong>
+              Clear Local Data
+            </strong>
+
+            <span>
+              Remove locally saved CIVA data from this browser
+            </span>
+
+          </div>
+
+          <span class="settings-arrow">
+            ›
+          </span>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRIVACY
+    ========================== -->
+
+    <section class="settings-section">
+
+      <h2>
+        Privacy
+      </h2>
+
+      <div class="settings-card">
+
+        <a
+          class="settings-item"
+        >
+
+          <div>
+
+            <strong>
+              Privacy Policy
+            </strong>
+
+            <span>
+              Learn how CIVA handles information and privacy
+            </span>
+
+          </div>
+
+          <span class="settings-arrow">
+            ›
+          </span>
+
+        </a>
+
+
+        <div class="settings-divider"></div>
+
+
+        <a
+          href="licenses.html"
+          class="settings-item"
+        >
+
+          <div>
+
+            <strong>
+              Licenses
+            </strong>
+
+            <span>
+              View licenses and third-party notices
+            </span>
+
+          </div>
+
+          <span class="settings-arrow">
+            ›
+          </span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PREFERENCES
+    ========================== -->
+
+    <section class="settings-section">
+
+      <h2>
+        Preferences
+      </h2>
+
+      <div class="settings-card">
+
+        <div class="settings-item settings-static">
+
+          <div>
+
+            <strong>
+              Notifications
+            </strong>
+
+            <span>
+              Notification controls will be available later
+            </span>
+
+          </div>
+
+          <span class="settings-status">
+            Soon
+          </span>
+
+        </div>
+
+
+        <div class="settings-divider"></div>
+
+
+        <div class="settings-item settings-static">
+
+          <div>
+
+            <strong>
+              Appearance
+            </strong>
+
+            <span>
+              Appearance options will be available later
+            </span>
+
+          </div>
+
+          <span class="settings-status">
+            Soon
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         INFORMATION
+    ========================== -->
+
+    <section class="settings-section">
+
+      <h2>
+        Information
+      </h2>
+
+      <div class="settings-card">
+
+        <div class="settings-item settings-static">
+
+          <div>
+
+            <strong>
+              About CIVA
+            </strong>
+
+            <span>
+              Community and public participation platform
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="settings-divider"></div>
+
+
+        <div class="settings-item settings-static">
+
+          <div>
+
+            <strong>
+              Version
+            </strong>
+
+            <span>
+              CIVA MVP
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MESSAGE
+    ========================== -->
+
+    <p
+      id="settingsMessage"
+      class="settings-message"
+      role="status"
+      aria-live="polite"
+    ></p>
+
+  </main>
+
+
+  <script src="settings.js"></script>
+
+</body>
+
+</html>
