@@ -1,0 +1,222 @@
+/* =========================
+   CIVA EDIT PROFILE
+========================= */
+
+.edit-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 16px 100px;
+  box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+.edit-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.edit-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #1565c0;
+  font-size: 25px;
+}
+
+.edit-back:hover {
+  background: #f1f5f9;
+}
+
+.edit-eyebrow {
+  margin: 0 0 3px;
+  color: #1565c0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.edit-header h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+
+/* PROFILE PREVIEW */
+
+.edit-profile-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.edit-avatar-wrapper {
+  width: 105px;
+  height: 105px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #1565c0;
+  background: #f5f7fa;
+}
+
+.edit-profile-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.edit-image-button {
+  margin-top: 12px;
+  padding: 9px 16px;
+  border: 1px solid #1565c0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1565c0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-image-button:active {
+  transform: scale(.98);
+}
+
+
+/* FORM */
+
+.edit-form-section {
+  width: 100%;
+}
+
+.edit-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.edit-field label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.edit-field input,
+.edit-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #d6dce5;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #17202a;
+  font: inherit;
+  outline: none;
+}
+
+.edit-field input:focus,
+.edit-field textarea:focus {
+  border-color: #1565c0;
+  box-shadow: 0 0 0 3px rgba(21, 101, 192, .10);
+}
+
+.edit-field textarea {
+  min-height: 105px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.edit-character-count {
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+  font-size: 12px;
+  opacity: .6;
+}
+
+
+/* MESSAGE */
+
+.edit-message {
+  min-height: 20px;
+  margin: 5px 0 15px;
+  font-size: 14px;
+}
+
+
+/* ACTIONS */
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-cancel-button,
+.edit-save-button {
+  flex: 1;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 11px;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.edit-cancel-button {
+  border: 1px solid #d6dce5;
+  background: #ffffff;
+  color: #46515f;
+}
+
+.edit-save-button {
+  border: 0;
+  background: #1565c0;
+  color: #ffffff;
+}
+
+.edit-save-button:active,
+.edit-cancel-button:active {
+  transform: scale(.98);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+  .edit-page {
+    padding: 16px 14px 90px;
+  }
+
+  .edit-header h1 {
+    font-size: 22px;
+  }
+
+  .edit-avatar-wrapper {
+    width: 95px;
+    height: 95px;
+  }
+
+  .edit-actions {
+    flex-direction: column-reverse;
+  }
+
+  .edit-cancel-button,
+  .edit-save-button {
+    width: 100%;
+  }
+
+}
