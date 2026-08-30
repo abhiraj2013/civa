@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Sign in to your CIVA account.">
+
+  <meta name="theme-color" content="#0d6efd">
+
+  <meta name="color-scheme" content="light">
+
+  <title>CIVA | Sign In</title>
+
+  <link rel="icon" type="image/png" href="civa.png">
+
+  <link rel="stylesheet" href="login.css">
+
+</head>
+
+
+<body>
+
+  <main class="login-page">
+
+    <section class="login-container" aria-labelledby="loginTitle">
+
+
+      <!-- BRAND -->
+
+      <a href="home.html" class="login-brand" aria-label="CIVA Home">
+
+        <img src="civa.png" alt="CIVA" class="login-brand-logo" width="48" height="48">
+
+        <span>
+          CIVA
+        </span>
+
+      </a>
+
+
+      <!-- LOGIN CARD -->
+
+      <div class="login-card">
+
+
+        <div class="login-heading">
+
+          <p class="login-label">
+            Welcome back
+          </p>
+
+          <h1 id="loginTitle">
+            Sign in to CIVA
+          </h1>
+
+          <p class="login-description">
+            Continue to your CIVA profile and activity on this device.
+          </p>
+
+        </div>
+
+
+        <form id="loginForm" class="login-form" novalidate>
+
+
+          <!-- EMAIL -->
+
+          <div class="login-field">
+
+            <label for="email">
+              Email address
+            </label>
+
+            <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"
+              maxlength="254" required aria-describedby="emailError">
+
+            <small class="login-error" id="emailError">
+            </small>
+
+          </div>
+
+
+          <!-- PASSWORD -->
+
+          <div class="login-field">
+
+            <div class="password-label-row">
+
+              <label for="password">
+                Password
+              </label>
+
+              <a href="forgot-password.html" class="forgot-password">
+
+                Forgot password?
+
+              </a>
+
+            </div>
+
+
+            <div class="password-wrapper">
+
+              <input type="password" id="password" name="password" placeholder="Enter your password"
+                autocomplete="current-password" maxlength="128" required aria-describedby="passwordError">
+
+              <button type="button" class="password-toggle" data-target="password" aria-label="Show password">
+
+                Show
+
+              </button>
+
+            </div>
+
+
+            <small class="login-error" id="passwordError">
+            </small>
+
+          </div>
+
+
+          <!-- REMEMBER -->
+
+          <div class="login-options">
+
+            <label class="remember-option">
+
+              <input type="checkbox" id="rememberMe" name="rememberMe">
+
+              <span>
+                Keep me signed in
+              </span>
+
+            </label>
+
+          </div>
+
+
+          <!-- SUBMIT -->
+
+          <button type="submit" class="login-submit" id="loginSubmit">
+
+            Sign In
+
+          </button>
+
+
+          <!-- MESSAGE -->
+
+          <div class="login-message" id="loginMessage" role="status" aria-live="polite">
+          </div>
+
+
+        </form>
+
+
+        <!-- CREATE ACCOUNT -->
+
+        <div class="login-divider">
+
+          <span>
+            New to CIVA?
+          </span>
+
+        </div>
+
+
+        <a href="signup.html" class="create-account-button">
+
+          Create Account
+
+        </a>
+
+
+        <p class="login-footer-text">
+
+          CIVA's current frontend version stores your profile locally on this device.
+
+        </p>
+
+      </div>
+
+
+      <!-- SECURITY NOTE -->
+
+      <div class="login-security-note" role="note">
+
+        <span class="security-icon" aria-hidden="true">
+
+          ✓
+
+        </span>
+
+        <div>
+
+          <strong>
+            Frontend MVP
+          </strong>
+
+          <p>
+            Secure server-side authentication will be added with the backend.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- HELP -->
+
+      <div class="login-help">
+
+        <p>
+          Having trouble signing in?
+        </p>
+
+        <a href="contact.html">
+          Get help
+        </a>
+
+      </div>
+
+
+    </section>
+
+  </main>
+
+
+  <script src="login.js"></script>
+
+</body>
+
+</html>
