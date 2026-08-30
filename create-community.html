@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Create a community on CIVA.">
+
+  <meta name="theme-color" content="#0d6efd">
+
+  <title>CIVA | Create Community</title>
+
+  <link rel="stylesheet" href="create-community.css">
+
+</head>
+
+<body>
+
+  <main class="create-community-page">
+
+    <section class="create-community-container" aria-labelledby="createCommunityTitle">
+
+
+      <header class="create-community-header">
+
+        <a href="profile.html" class="back-community">
+
+          <span aria-hidden="true">
+            ←
+          </span>
+
+          <span>
+            Communities
+          </span>
+
+        </a>
+
+
+        <a href="home.html" class="create-community-brand" aria-label="CIVA Home">
+
+          <img src="civa.png" alt="CIVA" class="create-community-logo">
+
+          <span>
+            CIVA
+          </span>
+
+        </a>
+
+      </header>
+
+
+      <div class="create-community-card">
+
+
+        <div class="create-community-heading">
+
+          <p class="create-community-label">
+            Community
+          </p>
+
+          <h1 id="createCommunityTitle">
+            Create a Community
+          </h1>
+
+          <p>
+            Create a useful community where people
+            can discuss a genuine public issue
+            peacefully and responsibly.
+          </p>
+
+        </div>
+
+
+        <div class="community-limit-note" role="note">
+
+          <span aria-hidden="true">
+            ℹ
+          </span>
+
+          <p>
+            A leader account can create a maximum
+            of 10 communities in a year.
+          </p>
+
+        </div>
+
+
+        <form id="createCommunityForm" class="create-community-form" novalidate>
+
+
+          <div class="community-field">
+
+            <label for="communityName">
+              Community name
+            </label>
+
+            <input type="text" id="communityName" name="communityName" placeholder="Enter community name" maxlength="80"
+              autocomplete="off" required aria-describedby="communityNameError">
+
+            <div class="field-meta">
+
+              <small id="communityNameError" class="community-error">
+              </small>
+
+              <span id="communityNameCount">
+                0/80
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="community-field">
+
+            <label for="communityCategory">
+              Category
+            </label>
+
+            <select id="communityCategory" name="category" required aria-describedby="communityCategoryError">
+
+              <option value="" selected disabled>
+                Select a category
+              </option>
+
+              <option value="roads">
+                Roads & Traffic
+              </option>
+
+              <option value="water">
+                Water & Drainage
+              </option>
+
+              <option value="electricity">
+                Electricity
+              </option>
+
+              <option value="education">
+                Education
+              </option>
+
+              <option value="environment">
+                Environment
+              </option>
+
+              <option value="transport">
+                Transport
+              </option>
+
+              <option value="public-facilities">
+                Public Facilities
+              </option>
+
+              <option value="other">
+                Other
+              </option>
+
+            </select>
+
+            <small id="communityCategoryError" class="community-error">
+            </small>
+
+          </div>
+
+
+          <div class="community-field">
+
+            <label for="communityDescription">
+              Description
+            </label>
+
+            <textarea id="communityDescription" name="description" rows="5" maxlength="500"
+              placeholder="Explain what this community is about..." required
+              aria-describedby="communityDescriptionError">
+            </textarea>
+
+            <div class="field-meta">
+
+              <small id="communityDescriptionError" class="community-error">
+              </small>
+
+              <span id="communityDescriptionCount">
+                0/500
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="community-field">
+
+            <label for="communityLocation">
+              Location
+              <span>
+                (Optional)
+              </span>
+            </label>
+
+            <input type="text" id="communityLocation" name="location" placeholder="City, district or area"
+              maxlength="120" autocomplete="off" aria-describedby="communityLocationError">
+
+            <small id="communityLocationError" class="community-error">
+            </small>
+
+          </div>
+
+
+          <div class="community-field">
+
+            <label for="communityRules">
+              Community rules
+            </label>
+
+            <textarea id="communityRules" name="rules" rows="4" maxlength="600"
+              placeholder="Write simple rules for respectful participation..." required
+              aria-describedby="communityRulesError">
+            </textarea>
+
+            <div class="field-meta">
+
+              <small id="communityRulesError" class="community-error">
+              </small>
+
+              <span id="communityRulesCount">
+                0/600
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <label class="responsibility-check">
+
+            <input type="checkbox" id="responsibilityCheck" name="responsibility" required>
+
+            <span>
+              I will keep this community
+              peaceful, relevant and responsible.
+            </span>
+
+          </label>
+
+          <small id="responsibilityError" class="community-error responsibility-error">
+          </small>
+
+
+          <button type="submit" id="createCommunityButton" class="create-community-button">
+
+            Create Community
+
+          </button>
+
+
+          <div id="createCommunityMessage" class="create-community-message" role="status" aria-live="polite">
+          </div>
+
+
+        </form>
+
+
+        <div class="community-safety-note">
+
+          <strong>
+            Community safety
+          </strong>
+
+          <p>
+            CIVA communities are for peaceful
+            civic participation. Harmful, illegal,
+            threatening or unrelated content
+            should not be posted.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="create-community.js"></script>
+
+</body>
+
+</html>
