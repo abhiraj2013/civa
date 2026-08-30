@@ -1,0 +1,1183 @@
+.creators-main {
+    width: 100%;
+    min-height: calc(100vh - 64px);
+    padding: 32px 20px 100px;
+}
+
+.creators-container {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.creators-heading {
+    margin-bottom: 24px;
+}
+
+.creators-eyebrow {
+    margin: 0 0 7px;
+    color: #1565c0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.creators-heading h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 750;
+}
+
+.creators-heading p {
+    max-width: 680px;
+    margin: 10px 0 0;
+    color: #687386;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+.creator-search-section {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.creator-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    padding: 0 15px;
+
+    background: #ffffff;
+    border: 1px solid #dfe5ec;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 14px rgba(20, 40, 70, 0.04);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.creator-search:focus-within {
+    border-color: #1565c0;
+    box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.09);
+}
+
+.creator-search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    margin-right: 10px;
+    color: #7a8698;
+}
+
+.creator-search input {
+    width: 100%;
+    min-width: 0;
+    height: 48px;
+    padding: 0;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+    color: #172033;
+
+    font: inherit;
+    font-size: 14px;
+}
+
+.creator-search input::placeholder {
+    color: #929cab;
+}
+
+
+.your-ranking {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 17px;
+
+    background: #f8fbff;
+    border: 1px solid #dce9f7;
+    border-radius: 13px;
+}
+
+.your-ranking-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #eaf3ff;
+    color: #1565c0;
+}
+
+.your-ranking-content {
+    min-width: 0;
+}
+
+.your-ranking-label {
+    margin: 0 0 3px;
+
+    color: #718096;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.your-ranking-content h2 {
+    margin: 0;
+
+    color: #172033;
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.your-ranking-content p:last-child {
+    margin: 4px 0 0;
+
+    color: #778396;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+
+.leaderboard-section {
+    width: 100%;
+}
+
+.leaderboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.leaderboard-header h2 {
+    margin: 0;
+
+    color: #172033;
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.leaderboard-header p {
+    margin: 5px 0 0;
+
+    color: #7a8493;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.leaderboard-refresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: #526174;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+.leaderboard-refresh:hover {
+    border-color: #1565c0;
+    color: #1565c0;
+    background: #f7fbff;
+}
+
+.leaderboard-refresh.is-loading svg {
+    animation: creatorRotate 0.7s linear infinite;
+}
+
+@keyframes creatorRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.creator-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.creator-card {
+    display: grid;
+    grid-template-columns: 48px 56px minmax(0, 1fr);
+    align-items: center;
+
+    gap: 13px;
+
+    width: 100%;
+    min-height: 82px;
+    padding: 12px 15px;
+
+    background: #ffffff;
+    border: 1px solid #e1e7ed;
+    border-radius: 13px;
+
+    box-shadow: 0 3px 13px rgba(20, 40, 70, 0.035);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.creator-card:hover {
+    transform: translateY(-1px);
+
+    border-color: #d2dfec;
+
+    box-shadow: 0 7px 20px rgba(20, 40, 70, 0.07);
+}
+
+.creator-card[hidden] {
+    display: none;
+}
+
+
+.creator-rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 40px;
+
+    color: #4f5d70;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+
+.creator-avatar {
+    width: 56px;
+    height: 56px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: #eef2f6;
+}
+
+.creator-avatar img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.creator-details {
+    min-width: 0;
+}
+
+.creator-details h3 {
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #1d293d;
+
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.creator-username {
+    margin: 3px 0 0;
+
+    overflow: hidden;
+
+    color: #8993a1;
+
+    font-size: 12px;
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.creator-support {
+    margin: 4px 0 0;
+
+    color: #687588;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.creator-support strong {
+    color: #1565c0;
+    font-weight: 700;
+}
+
+
+.creator-empty {
+    padding: 45px 20px;
+
+    text-align: center;
+
+    border: 1px dashed #d6dde6;
+    border-radius: 14px;
+
+    background: #ffffff;
+}
+
+.creator-empty[hidden] {
+    display: none;
+}
+
+.creator-empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 54px;
+    height: 54px;
+
+    margin: 0 auto 12px;
+
+    border-radius: 50%;
+
+    background: #f0f4f8;
+    color: #718096;
+}
+
+.creator-empty h3 {
+    margin: 0;
+
+    color: #273449;
+    font-size: 17px;
+}
+
+.creator-empty p {
+    margin: 6px 0 0;
+
+    color: #7d8795;
+    font-size: 13px;
+}
+
+
+.creator-info {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-top: 28px;
+    padding: 17px;
+
+    border: 1px solid #e1e7ee;
+    border-radius: 13px;
+
+    background: #f9fbfd;
+}
+
+.creator-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 9px;
+
+    background: #eaf3ff;
+    color: #1565c0;
+}
+
+.creator-info h2 {
+    margin: 1px 0 5px;
+
+    color: #253148;
+    font-size: 15px;
+}
+
+.creator-info p {
+    margin: 0 0 5px;
+
+    color: #718092;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.creator-info p:last-child {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 700px) {
+
+    .creators-main {
+        padding: 24px 14px 94px;
+    }
+
+    .creators-heading h1 {
+        font-size: 27px;
+    }
+
+    .creators-heading p {
+        font-size: 14px;
+    }
+
+    .creator-card {
+        grid-template-columns: 40px 50px minmax(0, 1fr);
+        gap: 11px;
+
+        min-height: 76px;
+        padding: 10px 12px;
+    }
+
+    .creator-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .creator-details h3 {
+        font-size: 15px;
+    }
+
+    .creator-support {
+        font-size: 11px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .creators-main {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .creators-heading {
+        margin-bottom: 20px;
+    }
+
+    .creators-heading h1 {
+        font-size: 25px;
+    }
+
+    .creator-search {
+        min-height: 48px;
+        padding: 0 13px;
+    }
+
+    .creator-search input {
+        height: 46px;
+        font-size: 13px;
+    }
+
+    .your-ranking {
+        padding: 14px;
+    }
+
+    .your-ranking-content h2 {
+        font-size: 16px;
+    }
+
+    .leaderboard-header h2 {
+        font-size: 19px;
+    }
+
+    .leaderboard-header p {
+        font-size: 12px;
+    }
+
+    .leaderboard-refresh {
+        width: 38px;
+        height: 38px;
+    }
+
+    .creator-card {
+        grid-template-columns: 34px 46px minmax(0, 1fr);
+        gap: 9px;
+        padding: 9px 10px;
+    }
+
+    .creator-rank {
+        min-width: 34px;
+        font-size: 12px;
+    }
+
+    .creator-avatar {
+        width: 46px;
+        height: 46px;
+    }
+
+    .creator-details h3 {
+        font-size: 14px;
+    }
+
+    .creator-username,
+    .creator-support {
+        font-size: 10.5px;
+    }
+
+    .creator-info {
+        padding: 14px;
+    }
+
+}
+/* =========================
+   CREATORS FINAL ADDITIONS
+========================= */
+
+.leaderboard-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 0 auto;
+}
+
+.create-creator-account {
+    min-height: 40px;
+    padding: 0 14px;
+    border: 1px solid #1565c0;
+    border-radius: 10px;
+    background: #1565c0;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.create-creator-account:hover {
+    background: #0d47a1;
+}
+
+.create-creator-account:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.creator-empty {
+    width: 100%;
+    padding: 35px 20px;
+    margin-top: 14px;
+    text-align: center;
+    border: 1px dashed #d6dde6;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.creator-empty[hidden] {
+    display: none;
+}
+
+.creator-empty h3 {
+    margin: 0;
+    color: #273449;
+    font-size: 17px;
+}
+
+.creator-empty p {
+    margin: 6px 0 0;
+    color: #7d8795;
+    font-size: 13px;
+}
+
+
+/* =========================
+   REAL CREATOR
+========================= */
+
+.real-creator-card {
+    border-color: #d7e5f5;
+}
+
+
+/* =========================
+   FAKE CREATORS
+========================= */
+
+.fake-creators-section {
+    width: 100%;
+    margin-top: 32px;
+    padding: 20px;
+    border: 1px solid #e2e7ed;
+    border-radius: 14px;
+    background: #f9fbfd;
+}
+
+.fake-creators-header {
+    margin-bottom: 16px;
+}
+
+.fake-creators-eyebrow {
+    margin: 0 0 6px;
+    color: #7b8798;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.fake-creators-header h2 {
+    margin: 0;
+    color: #273449;
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+.fake-creators-header p {
+    max-width: 650px;
+    margin: 6px 0 0;
+    color: #7a8493;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.fake-creator-list {
+    width: 100%;
+}
+
+
+/* =========================
+   CREATOR CARD SAFETY
+========================= */
+
+.creator-card {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.creator-avatar {
+    flex: 0 0 56px;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.creator-avatar img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    max-width: 56px;
+    max-height: 56px;
+    object-fit: cover;
+}
+
+.creator-details {
+    min-width: 0;
+}
+
+.creator-details h3,
+.creator-username,
+.creator-support {
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .leaderboard-header-actions {
+        gap: 6px;
+    }
+
+    .create-creator-account {
+        min-height: 38px;
+        padding: 0 11px;
+        font-size: 12px;
+    }
+
+    .fake-creators-section {
+        margin-top: 24px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .fake-creators-header h2 {
+        font-size: 18px;
+    }
+
+    .fake-creators-header p {
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .leaderboard-header {
+        align-items: flex-start;
+    }
+
+    .leaderboard-header-actions {
+        flex-shrink: 1;
+    }
+
+    .create-creator-account {
+        padding: 0 9px;
+        font-size: 11px;
+    }
+
+    .creator-avatar,
+    .creator-avatar img {
+        width: 52px;
+        height: 52px;
+        max-width: 52px;
+        max-height: 52px;
+    }
+
+}
+/* =========================================
+   CREATOR CARD FINAL RESPONSIVE FIX
+   Add at the END of creators.css
+========================================= */
+
+.creator-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* =========================
+   CREATOR CARD
+========================= */
+
+.creator-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 42px 56px minmax(0, 1fr);
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px 16px;
+
+    background: #ffffff;
+    border: 1px solid #e1e7ee;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.creator-card:hover {
+    border-color: #c9d7e8;
+    box-shadow: 0 6px 18px rgba(20, 40, 70, 0.06);
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   RANK
+========================= */
+
+.creator-rank {
+    width: 42px;
+    min-width: 42px;
+
+    text-align: center;
+
+    color: #1565c0;
+
+    font-size: 15px;
+    font-weight: 750;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.creator-avatar {
+    width: 56px;
+    height: 56px;
+
+    min-width: 56px;
+    min-height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: #eef3f8;
+    border: 1px solid #dce4ed;
+
+    box-sizing: border-box;
+}
+
+.creator-avatar img {
+    display: block;
+
+    width: 56px;
+    height: 56px;
+
+    max-width: 56px;
+    max-height: 56px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* =========================
+   CREATOR DETAILS
+========================= */
+
+.creator-details {
+    min-width: 0;
+    width: 100%;
+}
+
+.creator-details h3 {
+    margin: 0;
+
+    max-width: 100%;
+
+    color: #172033;
+
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 700;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.creator-username {
+    margin: 3px 0 0;
+
+    color: #7b8797;
+
+    font-size: 12px;
+    line-height: 1.4;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.creator-support {
+    margin: 5px 0 0;
+
+    color: #687587;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.creator-support strong {
+    color: #1565c0;
+    font-weight: 700;
+}
+
+
+/* =========================
+   HIDDEN SEARCH RESULTS
+========================= */
+
+.creator-card[hidden] {
+    display: none !important;
+}
+
+
+/* =========================
+   YOUR RANKING
+========================= */
+
+.your-ranking {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.your-ranking-content {
+    min-width: 0;
+}
+
+.your-ranking-content h2,
+.your-rank-link h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .creator-list {
+        gap: 10px;
+    }
+
+    .creator-card {
+        grid-template-columns: 34px 50px minmax(0, 1fr);
+
+        gap: 11px;
+
+        padding: 12px;
+        border-radius: 13px;
+    }
+
+    .creator-rank {
+        width: 34px;
+        min-width: 34px;
+
+        font-size: 14px;
+    }
+
+    .creator-avatar {
+        width: 50px;
+        height: 50px;
+
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+    .creator-avatar img {
+        width: 50px;
+        height: 50px;
+
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .creator-details h3 {
+        font-size: 15px;
+    }
+
+    .creator-username {
+        font-size: 11px;
+    }
+
+    .creator-support {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+    .creator-card {
+        grid-template-columns: 30px 46px minmax(0, 1fr);
+
+        gap: 9px;
+
+        padding: 11px;
+    }
+
+    .creator-rank {
+        width: 30px;
+        min-width: 30px;
+
+        font-size: 13px;
+    }
+
+    .creator-avatar {
+        width: 46px;
+        height: 46px;
+
+        min-width: 46px;
+        min-height: 46px;
+    }
+
+    .creator-avatar img {
+        width: 46px;
+        height: 46px;
+
+        max-width: 46px;
+        max-height: 46px;
+    }
+
+    .creator-details h3 {
+        font-size: 14px;
+    }
+
+    .creator-username,
+    .creator-support {
+        font-size: 10.5px;
+    }
+}
+/* =========================
+   YOUR CREATOR PROFILE
+========================= */
+
+.your-creator-ranking {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin: 18px 0;
+    padding: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #d9e5f2;
+    border-radius: 16px;
+
+    box-shadow: 0 4px 14px rgba(21, 101, 192, 0.06);
+}
+
+.your-creator-ranking-icon {
+    width: 44px;
+    height: 44px;
+
+    flex: 0 0 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #1565c0;
+
+    background: #eef6ff;
+
+    border-radius: 12px;
+}
+
+.your-creator-ranking-content {
+    min-width: 0;
+}
+
+.your-creator-ranking-label {
+    margin: 0 0 4px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #6b7c93;
+
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.your-creator-profile-link {
+    color: #1565c0;
+    text-decoration: none;
+}
+
+.your-creator-profile-link h2 {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    overflow-wrap: anywhere;
+}
+
+.your-creator-ranking-content > p:last-child {
+    margin: 5px 0 0;
+
+    font-size: 13px;
+    line-height: 1.45;
+
+    color: #6b7280;
+}
+
+
+@media (max-width: 600px) {
+
+    .your-creator-ranking {
+        gap: 12px;
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    .your-creator-ranking-icon {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+    .your-creator-profile-link h2 {
+        font-size: 16px;
+    }
+
+}
