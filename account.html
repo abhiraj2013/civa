@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <meta name="theme-color" content="#1565c0">
+
+  <meta name="color-scheme" content="light">
+
+  <meta name="description"
+    content="Create or access your CIVA account to participate in public discussions, support problems, join communities and manage your activity.">
+
+  <meta name="keywords" content="CIVA account, CIVA login, CIVA community, civic participation">
+
+  <meta name="author" content="CIVA">
+
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="CIVA | Account">
+
+  <meta property="og:description" content="Access your CIVA account and participate in civic discussions.">
+
+  <meta property="og:image" content="civa.png">
+
+  <link rel="icon" type="image/png" href="civa.png">
+
+  <link rel="apple-touch-icon" href="civa.png">
+
+  <title>CIVA | Account</title>
+
+  <link rel="stylesheet" href="account.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+
+<body>
+
+  <div class="app">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="top-header">
+
+      <div class="header-inner">
+
+
+        <div class="header-left">
+
+          <a href="home.html" aria-label="CIVA Home">
+
+            <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+          </a>
+
+        </div>
+
+
+        <div class="header-center">
+
+          <a href="account.html" class="header-title" aria-label="CIVA Account">
+
+            Account
+
+          </a>
+
+        </div>
+
+
+        <div class="header-right">
+
+          <button class="icon-button" id="navButton" type="button" aria-label="Open navigation" aria-controls="navMenu"
+            aria-expanded="false">
+
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" aria-hidden="true">
+
+              <line x1="4" y1="6" x2="20" y2="6">
+              </line>
+
+              <line x1="4" y1="12" x2="20" y2="12">
+              </line>
+
+              <line x1="4" y1="18" x2="20" y2="18">
+              </line>
+
+            </svg>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================
+         NAV OVERLAY
+    ========================== -->
+
+    <div class="civa-nav-overlay" id="navOverlay" aria-hidden="true">
+    </div>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <aside class="civa-nav-menu" id="navMenu" aria-hidden="true">
+
+
+      <div class="civa-nav-header">
+
+        <div>
+
+          <p class="civa-nav-label">
+            CIVA
+          </p>
+
+          <h2 class="civa-nav-title">
+            Navigation
+          </h2>
+
+        </div>
+
+
+        <button class="icon-button" id="navCloseButton" type="button" aria-label="Close navigation">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+
+            <line x1="6" y1="6" x2="18" y2="18">
+            </line>
+
+            <line x1="18" y1="6" x2="6" y2="18">
+            </line>
+
+          </svg>
+
+        </button>
+
+      </div>
+
+
+      <nav class="civa-nav-links" aria-label="CIVA navigation">
+
+
+        <a href="home.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <path d="M3 10.8L12 3l9 7.8">
+              </path>
+
+              <path d="M5.5 9.5V21h13V9.5">
+              </path>
+
+              <path d="M9.5 21v-6h5v6">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Home
+          </span>
+
+        </a>
+
+
+        <a href="community.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <circle cx="9" cy="8" r="3">
+              </circle>
+
+              <path d="M3.5 20a5.5 5.5 0 0 1 11 0">
+              </path>
+
+              <path d="M16 5.5a3 3 0 0 1 0 5.8">
+              </path>
+
+              <path d="M18 14.5a5 5 0 0 1 2.5 4.5">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Communities
+          </span>
+
+        </a>
+
+
+        <a href="news.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <path d="M4 4h16v16H4z">
+              </path>
+
+              <path d="M8 8h8">
+              </path>
+
+              <path d="M8 12h8">
+              </path>
+
+              <path d="M8 16h5">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Latest News
+          </span>
+
+        </a>
+
+
+        <a href="creators.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <circle cx="12" cy="8" r="4">
+              </circle>
+
+              <path d="M5 21a7 7 0 0 1 14 0">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Top Creators
+          </span>
+
+        </a>
+
+
+        <a href="leaders.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <path d="M6 4h12v5a6 6 0 0 1-12 0V4z">
+              </path>
+
+              <path d="M9 20h6">
+              </path>
+
+              <path d="M12 15v5">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Top Leaders
+          </span>
+
+        </a>
+
+
+        <a href="about.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round">
+
+              <circle cx="12" cy="12" r="9">
+              </circle>
+
+              <line x1="12" y1="11" x2="12" y2="16">
+              </line>
+
+              <circle cx="12" cy="7.5" r="0.7" fill="currentColor" stroke="none">
+              </circle>
+
+            </svg>
+
+          </span>
+
+          <span>
+            About Us
+          </span>
+
+        </a>
+
+
+        <a href="licenses.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <path d="M12 3l8 3v6c0 4.8-3.4 7.8-8 9-4.6-1.2-8-4.2-8-9V6l8-3z">
+              </path>
+
+              <path d="M9 12l2 2 4-4">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Licenses
+          </span>
+
+        </a>
+
+      </nav>
+
+
+      <div class="civa-nav-footer">
+
+        <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+        <p>
+          Simple. Useful. Civic.
+        </p>
+
+      </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="account-main">
+
+      <div class="account-container">
+
+
+        <section class="account-intro">
+
+          <p class="account-eyebrow">
+            YOUR CIVA ACCOUNT
+          </p>
+
+          <h1>
+            Participate in your community.
+          </h1>
+
+          <p>
+            Create an account to support public problems,
+            join communities, comment and manage your
+            CIVA activity.
+          </p>
+
+        </section>
+
+
+        <!-- Account Card -->
+
+        <section class="account-card" aria-labelledby="accountTitle">
+
+
+          <div class="account-card-icon">
+
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <circle cx="12" cy="8" r="3.5">
+              </circle>
+
+              <path d="M4.5 21a7.5 7.5 0 0 1 15 0">
+              </path>
+
+            </svg>
+
+          </div>
+
+
+          <h2 id="accountTitle">
+            Welcome to CIVA
+          </h2>
+
+          <p>
+            Sign in or create your free account
+            to participate.
+          </p>
+
+
+          <div class="account-buttons">
+
+            <a href="login.html" class="account-primary-button">
+
+              Sign In
+
+            </a>
+
+
+            <a href="signup.html" class="account-secondary-button">
+
+              Create Account
+
+            </a>
+
+          </div>
+
+
+        </section>
+
+
+        <!-- Account Benefits -->
+
+        <section class="account-benefits" aria-labelledby="benefitsTitle">
+
+          <div class="section-heading">
+
+            <p class="account-eyebrow">
+              ACCOUNT FEATURES
+            </p>
+
+            <h2 id="benefitsTitle">
+              What your account unlocks
+            </h2>
+
+          </div>
+
+
+          <div class="benefits-list">
+
+
+            <article class="benefit-item">
+
+              <div class="benefit-icon">
+
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+
+                  <path d="M12 20h9">
+                  </path>
+
+                  <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4z">
+                  </path>
+
+                </svg>
+
+              </div>
+
+              <div>
+
+                <h3>
+                  Share public problems
+                </h3>
+
+                <p>
+                  Bring useful public issues
+                  to the CIVA community.
+                </p>
+
+              </div>
+
+            </article>
+
+
+            <article class="benefit-item">
+
+              <div class="benefit-icon">
+
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+
+                  <path
+                    d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5z">
+                  </path>
+
+                </svg>
+
+              </div>
+
+              <div>
+
+                <h3>
+                  Support issues
+                </h3>
+
+                <p>
+                  Show support for problems
+                  that matter to you.
+                </p>
+
+              </div>
+
+            </article>
+            <article class="benefit-item">
+
+              <div class="benefit-icon">
+
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+
+                  <path d="M21 11.5a8 8 0 0 1-8.3 8H9l-4.5 2.2.8-4.5A7.7 7.7 0 0 1 4 11.5a8 8 0 0 1 17.0 0z"></path>
+
+                </svg>
+
+              </div>
+
+              <div>
+                <h3>Join discussions</h3>
+
+                <p>
+                  Comment on useful posts and
+                  take part in civic discussions.
+                </p>
+              </div>
+
+            </article>
+
+
+            <article class="benefit-item">
+
+              <div class="benefit-icon">
+
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+
+                  <circle cx="9" cy="8" r="3"></circle>
+
+                  <path d="M3.5 20a5.5 5.5 0 0 1 11 0"></path>
+
+                  <path d="M16 5.5a3 3 0 0 1 0 5.8"></path>
+
+                  <path d="M18 14.5a5 5 0 0 1 2.5 4.5"></path>
+
+                </svg>
+
+              </div>
+
+              <div>
+                <h3>Join communities</h3>
+
+                <p>
+                  Connect with communities around
+                  public issues and discussions.
+                </p>
+              </div>
+
+            </article>
+
+
+            <article class="benefit-item">
+
+              <div class="benefit-icon">
+
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+
+                  <path d="M6 4h12v17l-6-3-6 3V4z"></path>
+
+                </svg>
+
+              </div>
+
+              <div>
+                <h3>Save useful posts</h3>
+
+                <p>
+                  Keep important public issues
+                  available in your account.
+                </p>
+              </div>
+
+            </article>
+
+
+          </div>
+
+        </section>
+
+
+        <!-- Optional Account Notice -->
+
+        <section class="account-notice">
+
+          <div class="notice-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <circle cx="12" cy="12" r="9"></circle>
+
+              <line x1="12" y1="11" x2="12" y2="16"></line>
+
+              <circle cx="12" cy="7.5" r="0.7" fill="currentColor" stroke="none">
+              </circle>
+
+            </svg>
+
+          </div>
+
+          <div>
+
+            <h3>
+              Browsing does not require an account
+            </h3>
+
+            <p>
+              You can explore CIVA, search posts and
+              discover public discussions without signing in.
+            </p>
+
+          </div>
+
+        </section>
+
+
+      </div>
+
+    </main>
+
+
+    <!-- =========================
+         MOBILE BOTTOM NAVIGATION
+    ========================== -->
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+
+
+      <a href="home.html" class="bottom-nav-item" aria-label="Home">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M3 10.8L12 3l9 7.8"></path>
+
+            <path d="M5.5 9.5V21h13V9.5"></path>
+
+            <path d="M9.5 21v-6h5v6"></path>
+
+          </svg>
+
+        </span>
+
+        <span class="bottom-nav-label">
+          Home
+        </span>
+
+      </a>
+
+
+      <a href="community.html" class="bottom-nav-item" aria-label="Community">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="9" cy="8" r="3">
+            </circle>
+
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0">
+            </path>
+
+            <path d="M16 5.5a3 3 0 0 1 0 5.8">
+            </path>
+
+            <path d="M18 14.5a5 5 0 0 1 2.5 4.5">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span class="bottom-nav-label">
+          Community
+        </span>
+
+      </a>
+
+
+      <a href="account.html" class="bottom-nav-item active" aria-label="Account">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="12" cy="8" r="3.5">
+            </circle>
+
+            <path d="M4.5 21a7.5 7.5 0 0 1 15 0">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span class="bottom-nav-label">
+          Account
+        </span>
+
+      </a>
+
+
+    </nav>
+
+
+  </div>
+
+  <script src="civa-data.js"></script>
+  <script src="navigation.js"></script>
+  <script src="account.js"></script>
+
+</body>
+
+</html>
