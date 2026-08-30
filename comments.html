@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#1565c0">
+
+  <title>CIVA | Comments</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="responsive.css">
+
+  <style>
+    .comments-page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 20px 16px 100px;
+    }
+
+    .comments-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .comments-back {
+      text-decoration: none;
+      font-size: 24px;
+    }
+
+    .comments-title {
+      margin: 0;
+    }
+
+    .comment-form {
+      margin-bottom: 28px;
+    }
+
+    .comment-input {
+      width: 100%;
+      min-height: 100px;
+      padding: 14px;
+      border: 1px solid #d6dce5;
+      border-radius: 12px;
+      resize: vertical;
+      font: inherit;
+      box-sizing: border-box;
+    }
+
+    .comment-submit {
+      margin-top: 10px;
+      padding: 11px 18px;
+      border: 0;
+      border-radius: 10px;
+      background: #1565c0;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .comments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .comment-card {
+      padding: 15px;
+      border: 1px solid #e1e5eb;
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .comment-user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .comment-user img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .comment-user strong {
+      display: block;
+    }
+
+    .comment-time {
+      font-size: 12px;
+      opacity: .6;
+    }
+
+    .comment-text {
+      margin: 8px 0 0;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+
+    .no-comments {
+      text-align: center;
+      padding: 30px 10px;
+      opacity: .65;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <main class="comments-page">
+
+
+    <!-- HEADER -->
+
+    <header class="comments-header">
+
+      <a href="home.html" class="comments-back" aria-label="Back to Home">
+
+        ←
+
+      </a>
+
+      <h1 class="comments-title">
+        Comments
+      </h1>
+
+    </header>
+
+
+
+    <!-- ADD COMMENT -->
+
+    <section>
+
+      <form id="commentForm" class="comment-form">
+
+        <textarea id="commentInput" class="comment-input" placeholder="Write your comment..." maxlength="500" required>
+        </textarea>
+
+
+        <button type="submit" class="comment-submit">
+
+          Post Comment
+
+        </button>
+
+      </form>
+
+    </section>
+
+
+
+    <!-- COMMENTS -->
+
+    <section>
+
+      <div id="commentsList" class="comments-list">
+      </div>
+
+      <p id="noComments" class="no-comments">
+
+        No comments yet. Be the first to comment.
+
+      </p>
+
+    </section>
+
+
+  </main>
+
+
+  <script src="comments.js"></script>
+
+</body>
+
+</html>
