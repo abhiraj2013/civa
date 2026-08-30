@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <meta name="theme-color" content="#1565c0">
+
+  <meta name="color-scheme" content="light">
+
+  <meta name="description"
+    content="Explore public problems, civic discussions and useful community posts on CIVA. Discover issues, support posts and participate in peaceful civic discussions.">
+
+  <meta name="keywords"
+    content="CIVA, public problems, civic issues, public discussions, civic participation, communities, social issues">
+
+  <meta name="author" content="CIVA">
+
+  <meta name="application-name" content="CIVA">
+
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="CIVA | Public Problems & Civic Participation">
+
+  <meta property="og:description" content="Discover public problems, useful discussions and civic communities on CIVA.">
+
+  <meta property="og:image" content="civa.png">
+
+  <meta property="og:image:alt" content="CIVA logo">
+
+  <meta property="og:site_name" content="CIVA">
+
+  <meta name="twitter:card" content="summary">
+
+  <meta name="twitter:title" content="CIVA | Public Problems & Civic Participation">
+
+  <meta name="twitter:description"
+    content="Discover public problems, useful discussions and civic communities on CIVA.">
+
+  <meta name="twitter:image" content="civa.png">
+
+  <meta name="twitter:image:alt" content="CIVA logo">
+
+  <link rel="icon" type="image/png" href="civa.png">
+
+  <link rel="apple-touch-icon" href="civa.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="responsive.css">
+
+  <title>
+    CIVA | Public Problems & Civic Participation
+  </title>
+
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="top-header">
+
+      <div class="header-inner">
+
+        <div class="header-left">
+
+          <a href="home.html" class="header-logo-link" aria-label="CIVA Home">
+
+            <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+          </a>
+
+        </div>
+
+        <div class="header-center">
+
+          <a href="home.html" class="header-title" aria-label="CIVA Home">
+
+            CIVA
+
+          </a>
+
+        </div>
+
+        <div class="header-right">
+
+          <button class="icon-button" id="navButton" type="button" aria-label="Open navigation" aria-controls="navMenu"
+            aria-expanded="false">
+
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" aria-hidden="true">
+
+              <line x1="4" y1="6" x2="20" y2="6">
+              </line>
+
+              <line x1="4" y1="12" x2="20" y2="12">
+              </line>
+
+              <line x1="4" y1="18" x2="20" y2="18">
+              </line>
+
+            </svg>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <div class="civa-nav-overlay" id="navOverlay" aria-hidden="true">
+    </div>
+
+
+    <aside class="civa-nav-menu" id="navMenu" aria-hidden="true">
+
+      <div class="civa-nav-header">
+
+        <div>
+
+          <p class="civa-nav-label">
+            CIVA
+          </p>
+
+          <h2 class="civa-nav-title">
+            Navigation
+          </h2>
+
+        </div>
+
+        <button class="icon-button" id="navCloseButton" type="button" aria-label="Close navigation">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" aria-hidden="true">
+
+            <line x1="6" y1="6" x2="18" y2="18">
+            </line>
+
+            <line x1="18" y1="6" x2="6" y2="18">
+            </line>
+
+          </svg>
+
+        </button>
+
+      </div>
+
+
+      <nav class="civa-nav-links" aria-label="CIVA navigation">
+
+
+        <a href="home.html" class="civa-nav-link active" aria-current="page">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <path d="M3 11.5L12 4l9 7.5">
+              </path>
+
+              <path d="M5.5 10.5V20h13v-9.5">
+              </path>
+
+              <path d="M9.5 20v-5h5v5">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Home
+          </span>
+
+        </a>
+
+
+        <a href="community.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <circle cx="9" cy="8" r="3.5">
+              </circle>
+
+              <path d="M2.5 20a6.5 6.5 0 0 1 13 0">
+              </path>
+
+              <path d="M16 5.5a3 3 0 0 1 0 6">
+              </path>
+
+              <path d="M17 14a5 5 0 0 1 4.5 6">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Communities
+          </span>
+
+        </a>
+
+
+        <a href="news.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <path d="M5 4h14v16H5z">
+              </path>
+
+              <path d="M8 8h8">
+              </path>
+
+              <path d="M8 12h8">
+              </path>
+
+              <path d="M8 16h5">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Latest News
+          </span>
+
+        </a>
+
+
+        <a href="creators.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <circle cx="12" cy="8" r="3.5">
+              </circle>
+
+              <path d="M5 20a7 7 0 0 1 14 0">
+              </path>
+
+              <path d="M18 3.5l.7 1.5 1.6.7-1.6.7-.7 1.6-.7-1.6-1.6-.7 1.6-.7.7-1.5z">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Top Creators
+          </span>
+
+        </a>
+
+
+        <a href="leaders.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <path d="M6 5h12v4a6 6 0 0 1-12 0V5z">
+              </path>
+
+              <path d="M9 20h6">
+              </path>
+
+              <path d="M12 15v5">
+              </path>
+
+              <path d="M6 7H3v2a4 4 0 0 0 4 4">
+              </path>
+
+              <path d="M18 7h3v2a4 4 0 0 1-4 4">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Top Leaders
+          </span>
+
+        </a>
+
+
+        <a href="about.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round">
+
+              <circle cx="12" cy="12" r="9">
+              </circle>
+
+              <path d="M12 11v5">
+              </path>
+
+              <circle cx="12" cy="7.5" r="0.7" fill="currentColor" stroke="none">
+              </circle>
+
+            </svg>
+
+          </span>
+
+          <span>
+            About Us
+          </span>
+
+        </a>
+
+
+        <a href="licenses.html" class="civa-nav-link">
+
+          <span class="civa-nav-icon" aria-hidden="true">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+              stroke-linecap="round" stroke-linejoin="round">
+
+              <path d="M12 3l8 3v6c0 4.8-3.4 7.8-8 9-4.6-1.2-8-4.2-8-9V6l8-3z">
+              </path>
+
+              <path d="M9 12l2 2 4-4">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Licenses
+          </span>
+
+        </a>
+
+      </nav>
+
+
+      <div class="civa-nav-footer">
+
+        <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+        <p>
+          Simple. Useful. Civic.
+        </p>
+
+      </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+      <div class="page-container">
+
+        <section class="content-container" aria-labelledby="homeTitle">
+
+
+          <div class="home-heading">
+
+            <p class="home-eyebrow">
+              PUBLIC VOICE
+            </p>
+
+            <h1 class="page-title" id="homeTitle">
+
+              What's happening?
+
+            </h1>
+
+            <p class="page-subtitle">
+
+              Discover public problems, useful discussions and issues that need attention.
+
+            </p>
+
+          </div>
+
+
+          <div class="home-search-section">
+
+            <label class="search-box" for="globalSearch">
+
+              <span class="search-icon" aria-hidden="true">
+
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round">
+
+                  <circle cx="11" cy="11" r="7">
+                  </circle>
+
+                  <path d="M20 20l-4-4">
+                  </path>
+
+                </svg>
+
+              </span>
+
+              <input id="globalSearch" type="search" name="search"
+                placeholder="Search creators, topics or public problems..." autocomplete="off" enterkeyhint="search"
+                aria-label="Search CIVA">
+
+            </label>
+
+
+            <div class="search-suggestions" id="searchSuggestions" hidden>
+            </div>
+
+          </div>
+
+
+          <div class="home-tabs" role="tablist" aria-label="Post feed">
+
+            <button class="home-tab active" id="latestTab" type="button" role="tab" aria-selected="true"
+              aria-controls="latestPosts">
+
+              Latest
+
+            </button>
+
+            <button class="home-tab" id="trendingTab" type="button" role="tab" aria-selected="false"
+              aria-controls="trendingPosts">
+
+              Trending
+
+            </button>
+
+          </div>
+          <section class="feed-section" id="latestPosts" role="tabpanel" aria-labelledby="latestTab">
+
+            <div class="feed-header">
+
+              <div>
+
+                <h2 class="section-title">
+                  Latest Posts
+                </h2>
+
+                <p class="section-subtitle">
+                  Recently shared public problems and discussions.
+                </p>
+
+              </div>
+
+              <button class="feed-refresh-button" id="latestRefreshButton" type="button"
+                aria-label="Refresh latest posts">
+
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                  <path d="M20 11a8 8 0 0 0-14.9-3"></path>
+                  <path d="M4 4v5h5"></path>
+                  <path d="M4 13a8 8 0 0 0 14.9 3"></path>
+                  <path d="M20 20v-5h-5"></path>
+
+                </svg>
+
+              </button>
+
+            </div>
+
+
+            <div class="posts-list" id="latestPostsList">
+
+              <article class="post-card">
+
+                <div class="post-header">
+
+                  <div class="post-author">
+
+                    <img src="profile-placeholder.jpg" alt="" class="avatar" width="42" height="42" loading="lazy">
+
+                    <div class="post-author-info">
+
+                      <p class="post-author-name">
+                        CIVA Community
+                      </p>
+
+                      <p class="post-meta">
+                        Public Issue · Recently
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <button class="icon-button post-menu-button" type="button" aria-label="Post options"
+                    aria-expanded="false">
+
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+
+                      <circle cx="5" cy="12" r="1.5"></circle>
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="19" cy="12" r="1.5"></circle>
+
+                    </svg>
+
+                  </button>
+
+                </div>
+
+
+                <h3 class="post-title">
+                  Public problems can be shared here
+                </h3>
+
+                <p class="post-text">
+                  CIVA helps people bring public issues into one simple and understandable place so that others can see,
+                  support and discuss them.
+                </p>
+
+
+                <img src="post-placeholder.jpg" alt="Public problem placeholder" class="post-image" width="760"
+                  height="430" loading="lazy">
+
+
+                <div class="post-actions">
+
+                  <button class="post-action support-button" type="button" aria-label="Support this post"
+                    aria-pressed="false">
+
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <path
+                        d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5z">
+                      </path>
+
+                    </svg>
+
+                    <span>
+                      Support
+                    </span>
+
+                    <span class="support-count">
+                      0
+                    </span>
+
+                  </button>
+
+
+                  <a href="comments.html" class="post-action" aria-label="Open comments">
+
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <path
+                        d="M20 11.5a7.5 7.5 0 0 1-7.8 7.5H8l-4 2v-5.1A7.4 7.4 0 0 1 4 11.5 8 8 0 0 1 12 4a8 8 0 0 1 8 7.5z">
+                      </path>
+
+                    </svg>
+
+                    <span>
+                      Comments
+                    </span>
+
+                  </a>
+
+
+                  <button class="post-action share-button" type="button" aria-label="Share post">
+
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <circle cx="18" cy="5" r="2.5"></circle>
+                      <circle cx="6" cy="12" r="2.5"></circle>
+                      <circle cx="18" cy="19" r="2.5"></circle>
+
+                      <path d="M8.2 10.8l7.5-4.2"></path>
+                      <path d="M8.2 13.2l7.5 4.2"></path>
+
+                    </svg>
+
+                    <span>
+                      Share
+                    </span>
+
+                  </button>
+
+                </div>
+
+              </article>
+
+            </div>
+
+          </section>
+
+
+          <section class="feed-section" id="trendingPosts" role="tabpanel" aria-labelledby="trendingTab" hidden>
+
+            <div class="feed-header">
+
+              <div>
+
+                <h2 class="section-title">
+                  Trending Posts
+                </h2>
+
+                <p class="section-subtitle">
+                  Public issues receiving attention and support.
+                </p>
+
+              </div>
+
+              <button class="feed-refresh-button" id="trendingRefreshButton" type="button"
+                aria-label="Refresh trending posts">
+
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                  <path d="M20 11a8 8 0 0 0-14.9-3"></path>
+                  <path d="M4 4v5h5"></path>
+                  <path d="M4 13a8 8 0 0 0 14.9 3"></path>
+                  <path d="M20 20v-5h-5"></path>
+
+                </svg>
+
+              </button>
+
+            </div>
+
+
+            <div class="posts-list" id="trendingPostsList">
+
+              <article class="post-card">
+
+                <div class="post-header">
+
+                  <div class="post-author">
+
+                    <img src="profile-placeholder.jpg" alt="" class="avatar" width="42" height="42" loading="lazy">
+
+                    <div class="post-author-info">
+
+                      <p class="post-author-name">
+                        CIVA Community
+                      </p>
+
+                      <p class="post-meta">
+                        Public Issue · Trending
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <button class="icon-button post-menu-button" type="button" aria-label="Post options"
+                    aria-expanded="false">
+
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+
+                      <circle cx="5" cy="12" r="1.5"></circle>
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="19" cy="12" r="1.5"></circle>
+
+                    </svg>
+
+                  </button>
+
+                </div>
+
+
+                <h3 class="post-title">
+                  A public issue needs community attention
+                </h3>
+
+                <p class="post-text">
+                  Useful public discussions can help people understand local issues, share information and support
+                  peaceful solutions.
+                </p>
+
+
+                <img src="post-placeholder.jpg" alt="Civic discussion placeholder" class="post-image" width="760"
+                  height="430" loading="lazy">
+
+
+                <div class="post-actions">
+
+                  <button class="post-action support-button" type="button" aria-label="Support this post"
+                    aria-pressed="false">
+
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <path
+                        d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5z">
+                      </path>
+
+                    </svg>
+
+                    <span>
+                      Support
+                    </span>
+
+                    <span class="support-count">
+                      0
+                    </span>
+
+                  </button>
+
+
+                  <a href="comments.html" class="post-action" aria-label="Open comments">
+
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <path
+                        d="M20 11.5a7.5 7.5 0 0 1-7.8 7.5H8l-4 2v-5.1A7.4 7.4 0 0 1 4 11.5 8 8 0 0 1 12 4a8 8 0 0 1 8 7.5z">
+                      </path>
+
+                    </svg>
+
+                    <span>
+                      Comments
+                    </span>
+
+                  </a>
+
+
+                  <button class="post-action share-button" type="button" aria-label="Share post">
+
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <circle cx="18" cy="5" r="2.5"></circle>
+                      <circle cx="6" cy="12" r="2.5"></circle>
+                      <circle cx="18" cy="19" r="2.5"></circle>
+
+                      <path d="M8.2 10.8l7.5-4.2"></path>
+                      <path d="M8.2 13.2l7.5 4.2"></path>
+
+                    </svg>
+
+                    <span>
+                      Share
+                    </span>
+
+                  </button>
+
+                </div>
+
+              </article>
+
+            </div>
+
+          </section>
+
+        </section>
+
+      </div>
+
+    </main>
+    <nav class="bottom-nav" aria-label="Main navigation">
+
+      <a href="home.html" class="bottom-nav-item active" aria-label="Home">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M3 10.8L12 3l9 7.8"></path>
+            <path d="M5.5 9.5V21h13V9.5"></path>
+            <path d="M9.5 21v-6h5v6"></path>
+
+          </svg>
+        </span>
+
+        <span class="bottom-nav-label">Home</span>
+
+      </a>
+
+
+      <a href="community.html" class="bottom-nav-item" aria-label="Community">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="9" cy="8" r="3"></circle>
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0"></path>
+
+            <path d="M16 5.5a3 3 0 0 1 0 5.8"></path>
+            <path d="M18 14.5a5 5 0 0 1 2.5 4.5"></path>
+
+          </svg>
+        </span>
+
+        <span class="bottom-nav-label">Community</span>
+
+      </a>
+
+
+      <a href="account.html" class="bottom-nav-item" aria-label="Account">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="12" cy="8" r="3.5"></circle>
+            <path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path>
+
+          </svg>
+        </span>
+
+        <span class="bottom-nav-label">Account</span>
+
+      </a>
+
+    </nav>
+
+    <footer class="site-footer">
+
+      <div class="footer-inner">
+
+        <img src="civa.png" alt="CIVA" class="footer-logo" width="120" height="40" loading="lazy">
+
+        <p>
+          Simple. Useful. Civic.
+        </p>
+
+      </div>
+
+    </footer>
+
+  </div>
+<!-- CIVA Report Modal -->
+<div
+  class="civa-report-modal"
+  id="reportModal"
+  hidden
+  aria-hidden="true"
+>
+  <div
+    class="civa-report-box"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="reportTitle"
+  >
+
+    <div class="civa-report-header">
+      <div>
+        <p class="civa-report-label">REPORT</p>
+        <h2 id="reportTitle">Report this post</h2>
+      </div>
+
+      <button
+        type="button"
+        class="civa-report-close"
+        id="reportCloseButton"
+        aria-label="Close report"
+      >
+        ×
+      </button>
+    </div>
+
+    <p class="civa-report-description">
+      Tell us why you want to report this post.
+    </p>
+
+    <label for="reportReason" class="civa-report-field-label">
+      Reason
+    </label>
+
+    <textarea
+      id="reportReason"
+      class="civa-report-textarea"
+      rows="5"
+      maxlength="500"
+      placeholder="Write your reason..."
+    ></textarea>
+
+    <p
+      id="reportError"
+      class="civa-report-error"
+      hidden
+    ></p>
+
+    <div class="civa-report-actions">
+      <button
+        type="button"
+        class="civa-report-cancel"
+        id="reportCancelButton"
+      >
+        Cancel
+      </button>
+
+      <button
+        type="button"
+        class="civa-report-submit"
+        id="reportSubmitButton"
+      >
+        Submit Report
+      </button>
+    </div>
+
+  </div>
+</div>
+  <script src="home.js" defer></script>
+
+</body>
+
+</html>
