@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta
+        name="theme-color"
+        content="#1565c0">
+
+    <meta
+        name="color-scheme"
+        content="light">
+
+    <meta
+        name="description"
+        content="CIVA Latest News — discover useful civic news, public updates and important developments.">
+
+    <meta
+        name="keywords"
+        content="CIVA, latest news, civic news, public updates, local news, civic issues">
+
+    <meta
+        name="author"
+        content="CIVA">
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+
+    <meta
+        property="og:type"
+        content="website">
+
+    <meta
+        property="og:title"
+        content="CIVA | Latest News">
+
+    <meta
+        property="og:description"
+        content="Discover useful civic news, public updates and important developments on CIVA.">
+
+    <meta
+        property="og:image"
+        content="civa.png">
+
+
+    <meta
+        name="twitter:card"
+        content="summary">
+
+    <meta
+        name="twitter:title"
+        content="CIVA | Latest News">
+
+    <meta
+        name="twitter:description"
+        content="Discover useful civic news, public updates and important developments on CIVA.">
+
+    <meta
+        name="twitter:image"
+        content="civa.png">
+
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="civa.png">
+
+    <link
+        rel="apple-touch-icon"
+        href="civa.png">
+
+
+    <title>CIVA | Latest News</title>
+
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="responsive.css">
+
+    <link
+        rel="stylesheet"
+        href="news.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <header class="top-header">
+
+        <div class="header-inner">
+
+
+            <div class="header-left">
+
+                <a
+                    href="home.html"
+                    aria-label="CIVA Home">
+
+                    <img
+                        src="civa.png"
+                        alt="CIVA"
+                        class="logo logo-sm"
+                        width="120"
+                        height="40">
+
+                </a>
+
+            </div>
+
+
+            <div class="header-center">
+
+                <a
+                    href="news.html"
+                    class="header-title"
+                    aria-label="CIVA Latest News">
+
+                    CIVA
+
+                </a>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button
+                    class="icon-button"
+                    id="navButton"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-controls="navMenu"
+                    aria-expanded="false">
+
+
+                    <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round">
+
+                        <line
+                            x1="4"
+                            y1="6"
+                            x2="20"
+                            y2="6">
+                        </line>
+
+                        <line
+                            x1="4"
+                            y1="12"
+                            x2="20"
+                            y2="12">
+                        </line>
+
+                        <line
+                            x1="4"
+                            y1="18"
+                            x2="20"
+                            y2="18">
+                        </line>
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <div
+        class="civa-nav-overlay"
+        id="navOverlay"
+        aria-hidden="true">
+    </div>
+
+
+
+    <aside
+        class="civa-nav-menu"
+        id="navMenu"
+        aria-hidden="true">
+
+
+        <div class="civa-nav-header">
+
+            <div>
+
+                <p class="civa-nav-label">
+                    CIVA
+                </p>
+
+                <h2 class="civa-nav-title">
+                    Navigation
+                </h2>
+
+            </div>
+
+
+            <button
+                class="icon-button"
+                id="navCloseButton"
+                type="button"
+                aria-label="Close navigation">
+
+
+                <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round">
+
+                    <line
+                        x1="6"
+                        y1="6"
+                        x2="18"
+                        y2="18">
+                    </line>
+
+                    <line
+                        x1="18"
+                        y1="6"
+                        x2="6"
+                        y2="18">
+                    </line>
+
+                </svg>
+
+            </button>
+
+        </div>
+
+
+
+        <nav
+            class="civa-nav-links"
+            aria-label="CIVA navigation">
+
+
+            <a
+                href="home.html"
+                class="civa-nav-link">
+
+                <span
+                    class="civa-nav-icon"
+                    aria-hidden="true">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.9"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path
+                            d="M3 10.8L12 3l9 7.8">
+                        </path>
+
+                        <path
+                            d="M5.5 9.5V21h13V9.5">
+                        </path>
+
+                        <path
+                            d="M9.5 21v-6h5v6">
+                        </path>
+
+                    </svg>
+
+                </span>
+
+                <span>
+                    Trending Posts
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="community.html"
+                class="civa-nav-link">
+
+                <span
+                    class="civa-nav-icon"
+                    aria-hidden="true">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.9"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path
+                            d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2">
+                        </path>
+
+                        <circle
+                            cx="10"
+                            cy="7"
+                            r="4">
+                        </circle>
+
+                        <path
+                            d="M17 11a4 4 0 0 0 0-8">
+                        </path>
+
+                        <path
+                            d="M21 21v-2a4 4 0 0 0-3-3.87">
+                        </path>
+
+                    </svg>
+
+                </span>
+
+                <span>
+                    Trending Communities Protests
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="news.html"
+                class="civa-nav-link active"
+                aria-current="page">
+
+                <span
+                    class="civa-nav-icon"
+                    aria-hidden="true">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.9"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path
+                            d="M4 4h16v16H4z">
+                        </path>
+
+                        <path
+                            d="M8 8h8">
+                        </path>
+
+                        <path
+                            d="M8 12h8">
+                        </path>
+
+                        <path
+                            d="M8 16h5">
+                        </path>
+
+                    </svg>
+
+                </span>
+
+                <span>
+                    Latest News
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="creators.html"
+                class="civa-nav-link">
+
+                <span
+                    class="civa-nav-icon"
+                    aria-hidden="true">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.9"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <circle
+                            cx="12"
+                            cy="8"
+                            r="4">
+                        </circle>
+
+                        <path
+                            d="M5 21a7 7 0 0 1 14 0">
+                        </path>
+
+                        <path
+                            d="M18 5l.8 1.6L20.5 7l-1.7.8L18 9.5l-.8-1.7L15.5 7l1.7-.4L18 5z">
+                        </path>
+
+                    </svg>
+
+                </span>
+
+                <span>
+                    Top Creators
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="leaders.html"
+                class="civa-nav-link">
+
+                <span
+                    class="civa-nav-icon"
+                    aria-hidden="true">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.9"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path
+                            d="M6 4h12v5a6 6 0 0 1-12 0V4z">
+                        </path>
+
+                        <path
+                            d="M9 20h6">
+                        </path>
+
+                        <path
+                            d="M12 15v5">
+                        </path>
+
+                        <path
+                            d="M6 7H3v2a4 4 0 0 0 4 4">
+                        </path>
+
+                        <path
+                            d="M18 7h3v2a4 4 0 0 1-4 4">
+                        </path>
+
+                    </svg>
+
+                </span>
+
+                <span>
+                    Top Leaders
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="about.html"
+                class="civa-nav-link">
+
+                <span
+                    class="civa-nav-icon"
+                    aria-hidden="true">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.9"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9">
+                        </circle>
+
+                        <line
+                            x1="12"
+                            y1="11"
+                            x2="12"
+                            y2="16">
+                        </line>
+
+                        <circle
+                            cx="12"
+                            cy="7.5"
+                            r="0.7"
+                            fill="currentColor"
+                            stroke="none">
+                        </circle>
+
+                    </svg>
+
+                </span>
+
+                <span>
+                    About Us
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="licenses.html"
+                class="civa-nav-link">
+
+                <span
+                    class="civa-nav-icon"
+                    aria-hidden="true">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.9"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path
+                            d="M12 3l8 3v6c0 4.8-3.4 7.8-8 9-4.6-1.2-8-4.2-8-9V6l8-3z">
+                        </path>
+
+                        <path
+                            d="M9 12l2 2 4-4">
+                        </path>
+
+                    </svg>
+
+                </span>
+
+                <span>
+                    Licenses
+                </span>
+
+            </a>
+
+        </nav>
+
+
+
+        <div class="civa-nav-footer">
+
+            <img
+                src="civa.png"
+                alt="CIVA"
+                class="logo logo-sm"
+                width="120"
+                height="40">
+
+            <p>
+                Simple. Useful. Civic.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+
+    <main class="news-main">
+
+        <div class="news-container">
+
+
+            <section class="news-heading">
+
+                <p class="news-eyebrow">
+                    CIVIC UPDATES
+                </p>
+
+                <h1>
+                    Latest News
+                </h1>
+
+                <p>
+                    Discover useful public updates, civic developments and important news.
+                </p>
+
+            </section>
+
+
+
+            <section class="news-search-section">
+
+                <label
+                    class="news-search"
+                    for="newsSearch">
+
+                    <span
+                        class="news-search-icon"
+                        aria-hidden="true">
+
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round">
+
+                            <circle
+                                cx="11"
+                                cy="11"
+                                r="7">
+                            </circle>
+
+                            <path
+                                d="M20 20l-4-4">
+                            </path>
+
+                        </svg>
+
+                    </span>
+
+                    <input
+                        id="newsSearch"
+                        type="search"
+                        placeholder="Search news or topics..."
+                        autocomplete="off"
+                        enterkeyhint="search">
+
+                </label>
+
+            </section>
+
+
+
+            <section
+                class="news-filters"
+                aria-label="News categories">
+
+                <button
+                    type="button"
+                    class="news-filter active"
+                    data-category="all">
+
+                    All
+
+                </button>
+
+                <button
+                    type="button"
+                    class="news-filter"
+                    data-category="local">
+
+                    Local
+
+                </button>
+
+                <button
+                    type="button"
+                    class="news-filter"
+                    data-category="public">
+
+                    Public Issues
+
+                </button>
+
+                <button
+                    type="button"
+                    class="news-filter"
+                    data-category="environment">
+
+                    Environment
+
+                </button>
+
+                <button
+                    type="button"
+                    class="news-filter"
+                    data-category="education">
+
+                    Education
+
+                </button>
+
+            </section>
+          <button
+    type="button"
+    class="publish-news-btn"
+    id="publishNewsBtn">
+
+    + Publish Your News
+
+          </button>
+            <section
+                class="news-feed"
+                aria-labelledby="newsFeedTitle">
+
+                <div class="news-feed-header">
+
+                    <div>
+
+                        <h2 id="newsFeedTitle">
+                          Recent News
+                        </h2>
+
+                        <p>
+                            Important updates and useful civic information.
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="news-refresh"
+                        id="newsRefresh"
+                        aria-label="Refresh news">
+
+                        <svg
+                            width="19"
+                            height="19"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <path
+                                d="M20 11a8 8 0 0 0-14.9-3">
+                            </path>
+
+                            <path
+                                d="M4 4v5h5">
+                            </path>
+
+                            <path
+                                d="M4 13a8 8 0 0 0 14.9 3">
+                            </path>
+
+                            <path
+                                d="M20 20v-5h-5">
+                            </path>
+
+                        </svg>
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="news-grid"
+                    id="newsGrid">
+
+
+                    <article
+                        class="news-card"
+                        data-category="local"
+                        data-search="local public development civic update">
+
+                        <a
+                            href="#"
+                            class="news-card-link">
+
+                            <div class="news-image-wrapper">
+
+                                <img
+                                    src="news-placeholder.jpg"
+                                    alt="Local public development"
+                                    class="news-image"
+                                    width="760"
+                                    height="430"
+                                    loading="lazy">
+
+                            </div>
+
+                            <div class="news-card-body">
+
+                                <div class="news-card-category">
+                                    Local
+                                </div>
+
+                                <p class="news-card-meta">
+                                    Public Update · Recently
+                                </p>
+
+                                <h3>
+                                    Local public developments and updates
+                                </h3>
+
+                                <p class="news-card-text">
+                                    Useful information about developments that may matter to local communities.
+                                </p>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article
+                        class="news-card"
+                        data-category="public"
+                        data-search="public issue civic problem safety update">
+
+                        <a
+                            href="#"
+                            class="news-card-link">
+
+                            <div class="news-image-wrapper">
+
+                                <img
+                                    src="news-placeholder.jpg"
+                                    alt="Public issue and civic update"
+                                    class="news-image"
+                                    width="760"
+                                    height="430"
+                                    loading="lazy">
+
+                            </div>
+
+                            <div class="news-card-body">
+
+                                <div class="news-card-category">
+                                    Public Issues
+                                </div>
+
+                                <p class="news-card-meta">
+                                    Civic Update · Recently
+                                </p>
+
+                                <h3>
+                                    Public issues and civic updates
+                                </h3>
+
+                                <p class="news-card-text">
+                                    Follow useful information about public concerns, safety and civic developments.
+                                </p>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article
+                        class="news-card"
+                        data-category="environment"
+                        data-search="environment pollution cleanliness nature">
+
+                        <a
+                            href="#"
+                            class="news-card-link">
+
+                            <div class="news-image-wrapper">
+
+                                <img
+                                    src="news-placeholder.jpg"
+                                    alt="Environment and pollution update"
+                                    class="news-image"
+                                    width="760"
+                                    height="430"
+                                    loading="lazy">
+
+                            </div>
+
+                            <div class="news-card-body">
+
+                                <div class="news-card-category">
+                                    Environment
+                                </div>
+
+                                <p class="news-card-meta">
+                                    Environment · Recently
+                                </p>
+
+                                <h3>
+                                    Environment and pollution updates
+                                </h3>
+
+                                <p class="news-card-text">
+                                    Discover useful updates related to pollution, cleanliness and environmental concerns.
+                                </p>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <article
+                        class="news-card"
+                        data-category="education"
+                        data-search="education school students learning public update">
+
+                        <a
+                            href="#"
+                            class="news-card-link">
+
+                            <div class="news-image-wrapper">
+
+                                <img
+                                    src="news-placeholder.jpg"
+                                    alt="Education public update"
+                                    class="news-image"
+                                    width="760"
+                                    height="430"
+                                    loading="lazy">
+
+                            </div>
+
+                            <div class="news-card-body">
+
+                                <div class="news-card-category">
+                                    Education
+                                </div>
+
+                                <p class="news-card-meta">
+                                    Education · Recently
+                                </p>
+
+                                <h3>
+                                    Education-related public updates
+                                </h3>
+
+                                <p class="news-card-text">
+                                    Discover useful developments and information connected with education.
+                                </p>
+
+                            </div>
+
+                        </a>
+
+                    </article>
+
+
+
+                </div>
+
+
+                <div
+                    class="news-empty"
+                    id="newsEmpty"
+                    hidden>
+
+                    <div class="news-empty-icon">
+
+                        <svg
+                            width="28"
+                            height="28"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <circle
+                                cx="11"
+                                cy="11"
+                                r="7">
+                            </circle>
+
+                            <path
+                                d="M20 20l-4-4">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+                        No news found
+                    </h3>
+
+                    <p>
+                        Try another search or category.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="news-info">
+
+                <div class="news-info-icon">
+
+                    <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9">
+                        </circle>
+
+                        <line
+                            x1="12"
+                            y1="11"
+                            x2="12"
+                            y2="16">
+                        </line>
+
+                        <circle
+                            cx="12"
+                            cy="7.5"
+                            r="0.7"
+                            fill="currentColor"
+                            stroke="none">
+                        </circle>
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <h2>
+                        About CIVA News
+                    </h2>
+
+                    <p>
+                        CIVA News is designed to make useful civic information easier to discover and understand.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <nav
+        class="bottom-navigation"
+        aria-label="Main navigation">
+
+
+        <a
+            href="home.html"
+            class="bottom-nav-item">
+
+            <span
+                class="bottom-nav-icon"
+                aria-hidden="true">
+
+                <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+
+                    <path
+                        d="M3 10.8L12 3l9 7.8">
+                    </path>
+
+                    <path
+                        d="M5.5 9.5V21h13V9.5">
+                    </path>
+
+                    <path
+                        d="M9.5 21v-6h5v6">
+                    </path>
+
+                </svg>
+
+            </span>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="community.html"
+            class="bottom-nav-item">
+
+            <span
+                class="bottom-nav-icon"
+                aria-hidden="true">
+
+                <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+
+                    <circle
+                        cx="9"
+                        cy="8"
+                        r="3">
+                    </circle>
+
+                    <path
+                        d="M3.5 20a5.5 5.5 0 0 1 11 0">
+                    </path>
+
+                    <path
+                        d="M16 5.5a3 3 0 0 1 0 5.8">
+                    </path>
+
+                </svg>
+
+            </span>
+
+            <span>
+                Community
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="account.html"
+            class="bottom-nav-item">
+
+            <span
+                class="bottom-nav-icon"
+                aria-hidden="true">
+
+                <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+
+                    <circle
+                        cx="12"
+                        cy="8"
+                        r="4">
+                    </circle>
+
+                    <path
+                        d="M5 21a7 7 0 0 1 14 0">
+                    </path>
+
+                </svg>
+
+            </span>
+
+            <span>
+                Account
+            </span>
+
+        </a>
+
+    </nav>
+
+
+</div>
+
+
+<script src="navigation.js"></script>
+<script src="news.js"></script>
+
+</body>
+</html>
