@@ -1,0 +1,516 @@
+@media (max-width: 900px) {
+
+    .header-inner {
+        width: calc(100% - 24px);
+    }
+
+    .page-container {
+        width: calc(100% - 24px);
+        padding-top: 38px;
+    }
+
+    .content-container {
+        width: min(760px, 100%);
+    }
+
+    .civa-nav-menu {
+        width: min(350px, 88vw);
+    }
+
+    .post-card {
+        border-radius: 14px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .top-header {
+        height: 58px;
+    }
+
+    .header-inner {
+        width: calc(100% - 18px);
+        grid-template-columns: 1fr auto 1fr;
+    }
+
+    .logo-sm {
+        width: 76px;
+    }
+
+    .header-title {
+        font-size: 18px;
+    }
+
+    .main-content {
+        min-height: calc(100vh - 58px);
+    }
+
+    .page-container {
+        width: calc(100% - 18px);
+        padding: 28px 0 42px;
+    }
+
+    .home-heading {
+        margin-bottom: 22px;
+    }
+
+    .home-eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.1em;
+    }
+
+    .page-title {
+        font-size: 30px;
+        line-height: 1.15;
+    }
+
+    .page-subtitle {
+        margin-top: 9px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .home-search-section {
+        margin-bottom: 20px;
+    }
+
+    .search-box {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 13px;
+        gap: 9px;
+        border-radius: 11px;
+    }
+
+    .search-icon {
+        width: 21px;
+        height: 21px;
+        flex: 0 0 21px;
+    }
+
+    .search-icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .search-box input {
+        width: 100%;
+        min-width: 0;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .search-box input::placeholder {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .search-suggestions {
+        top: calc(100% + 7px);
+        border-radius: 11px;
+    }
+
+    .search-suggestion {
+        min-height: 46px;
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .home-tabs {
+        width: 100%;
+        margin-bottom: 24px;
+        gap: 5px;
+    }
+
+    .home-tab {
+        flex: 1;
+        min-width: 0;
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .feed-header {
+        margin-bottom: 14px;
+        gap: 10px;
+    }
+
+    .section-title {
+        font-size: 19px;
+    }
+
+    .section-subtitle {
+        max-width: 90%;
+        margin-top: 3px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .feed-refresh-button {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+    }
+
+    .posts-list {
+        gap: 14px;
+    }
+
+    .post-card {
+        padding: 15px;
+        border-radius: 13px;
+    }
+
+    .post-header {
+        gap: 8px;
+        margin-bottom: 14px;
+    }
+
+    .post-author {
+        min-width: 0;
+        gap: 9px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+    .post-author-name {
+        font-size: 13px;
+    }
+
+    .post-meta {
+        font-size: 11px;
+    }
+
+    .post-menu-button {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+    }
+
+    .post-title {
+        margin-bottom: 7px;
+        font-size: 18px;
+        line-height: 1.35;
+    }
+
+    .post-text {
+        margin-bottom: 14px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .post-image {
+        max-height: 330px;
+        margin-bottom: 14px;
+        border-radius: 10px;
+    }
+
+    .post-actions {
+        gap: 4px;
+        padding-top: 10px;
+    }
+
+    .post-action {
+        min-height: 36px;
+        padding: 6px 8px;
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .post-action svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .post-options-menu {
+        top: 56px;
+        right: 10px;
+        width: 160px;
+    }
+
+    .post-option {
+        min-height: 39px;
+        font-size: 13px;
+    }
+
+    .civa-nav-menu {
+        width: min(340px, 88vw);
+        padding: 18px;
+    }
+
+    .civa-nav-link {
+        min-height: 46px;
+        font-size: 14px;
+    }
+
+    .civa-nav-footer {
+        padding-top: 15px;
+    }
+
+    .footer-inner {
+        width: calc(100% - 18px);
+        min-height: 88px;
+        padding: 20px 0;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .header-inner {
+        width: calc(100% - 14px);
+    }
+
+    .header-title {
+        font-size: 17px;
+    }
+
+    .logo-sm {
+        width: 70px;
+    }
+
+    .icon-button {
+        width: 39px;
+        height: 39px;
+    }
+
+    .page-container {
+        width: calc(100% - 14px);
+        padding-top: 24px;
+    }
+
+    .page-title {
+        font-size: 27px;
+    }
+
+    .page-subtitle {
+        font-size: 13px;
+    }
+
+    .search-box {
+        min-height: 50px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .search-box input {
+        height: 48px;
+        font-size: 13px;
+    }
+
+    .search-box input::placeholder {
+        font-size: 12px;
+    }
+
+    .home-tabs {
+        margin-bottom: 20px;
+    }
+
+    .home-tab {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .feed-header {
+        align-items: center;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .section-subtitle {
+        max-width: 250px;
+        font-size: 11px;
+    }
+
+    .feed-refresh-button {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+    }
+
+    .post-card {
+        padding: 13px;
+        border-radius: 12px;
+    }
+
+    .avatar {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+    }
+
+    .post-author-name {
+        font-size: 12px;
+    }
+
+    .post-meta {
+        font-size: 10px;
+    }
+
+    .post-menu-button {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+    }
+
+    .post-title {
+        font-size: 17px;
+    }
+
+    .post-text {
+        font-size: 12.5px;
+    }
+
+    .post-image {
+        max-height: 280px;
+    }
+
+    .post-actions {
+        justify-content: space-between;
+    }
+
+    .post-action {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 6px 5px;
+        font-size: 11px;
+    }
+
+    .post-action svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .support-count {
+        min-width: 12px;
+    }
+
+    .post-options-menu {
+        top: 52px;
+        right: 6px;
+        width: 150px;
+    }
+
+    .civa-nav-menu {
+        width: min(320px, 90vw);
+    }
+
+    .civa-nav-title {
+        font-size: 20px;
+    }
+
+    .civa-nav-link {
+        min-height: 44px;
+        padding: 9px 10px;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .civa-nav-icon {
+        width: 22px;
+        height: 22px;
+        flex-basis: 22px;
+    }
+
+    .civa-nav-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-inner {
+        width: calc(100% - 14px);
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 360px) {
+
+    .page-container {
+        width: calc(100% - 12px);
+    }
+
+    .page-title {
+        font-size: 25px;
+    }
+
+    .search-box input {
+        font-size: 12px;
+    }
+
+    .search-box input::placeholder {
+        font-size: 11px;
+    }
+
+    .post-card {
+        padding: 11px;
+    }
+
+    .post-actions {
+        gap: 2px;
+    }
+
+    .post-action {
+        padding-left: 3px;
+        padding-right: 3px;
+        font-size: 10px;
+    }
+
+    .post-action svg {
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+
+@media (orientation: landscape) and (max-height: 600px) {
+
+    .civa-nav-menu {
+        overflow-y: auto;
+    }
+
+    .civa-nav-links {
+        padding-top: 12px;
+    }
+
+    .civa-nav-link {
+        min-height: 42px;
+    }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .civa-nav-overlay,
+    .civa-nav-menu,
+    .icon-button,
+    .home-tab,
+    .search-box,
+    .search-suggestion,
+    .post-action,
+    .feed-refresh-button {
+        transition: none;
+    }
+
+}
+@media (max-width: 700px) {
+
+    .main-content {
+        padding-bottom: 76px;
+    }
+
+}
