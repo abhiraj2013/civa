@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="View a CIVA community and participate in peaceful civic discussion.">
+
+  <meta name="theme-color" content="#0d6efd">
+
+  <title>CIVA | Community</title>
+
+  <link rel="stylesheet" href="community-detail.css">
+
+</head>
+
+<body>
+
+  <main class="community-detail-page">
+
+    <div class="community-detail-container">
+
+
+      <header class="community-detail-header">
+
+        <a href="community.html" class="community-back" aria-label="Back to communities">
+
+          <span aria-hidden="true">
+            ←
+          </span>
+
+          <span>
+            Communities
+          </span>
+
+        </a>
+
+
+        <a href="home.html" class="community-detail-brand" aria-label="CIVA Home">
+
+          <img src="civa.png" alt="CIVA" class="community-detail-logo">
+
+          <span>
+            CIVA
+          </span>
+
+        </a>
+
+      </header>
+
+
+      <section id="communityNotFound" class="community-state community-not-found" hidden aria-live="polite">
+
+        <img src="community-placeholder.jpg" alt="" class="state-image">
+
+        <h1>
+          Community not found
+        </h1>
+
+        <p>
+          This community may have been removed
+          or the link may be incorrect.
+        </p>
+
+        <a href="community.html" class="state-button">
+
+          Browse Communities
+
+        </a>
+
+      </section>
+
+
+      <div id="communityContent" class="community-content" hidden>
+
+
+        <section class="community-hero" aria-labelledby="communityName">
+
+
+          <div class="community-cover">
+
+            <img id="communityImage" src="community-placeholder.jpg" alt="Community" class="community-image">
+
+          </div>
+
+
+          <div class="community-hero-body">
+
+
+            <div class="community-category" id="communityCategory">
+            </div>
+
+
+            <h1 id="communityName">
+              Community
+            </h1>
+
+
+            <p id="communityDescription" class="community-description">
+            </p>
+
+
+            <div class="community-meta">
+
+
+              <span id="communityLocation" class="community-meta-item">
+              </span>
+
+
+              <span id="communityMembers" class="community-meta-item">
+                0 members
+              </span>
+
+
+              <span id="communityPosts" class="community-meta-item">
+                0 posts
+              </span>
+
+
+            </div>
+
+
+            <div class="community-actions">
+
+              <button type="button" id="joinCommunityButton" class="join-community-button">
+
+                Join Community
+
+              </button>
+
+
+              <button type="button" id="shareCommunityButton" class="share-community-button">
+
+                Share
+
+              </button>
+
+            </div>
+
+
+            <div id="communityActionMessage" class="community-action-message" role="status" aria-live="polite">
+            </div>
+
+
+          </div>
+
+        </section>
+
+
+        <section class="community-info-section" aria-labelledby="communityAboutTitle">
+
+          <div class="section-heading">
+
+            <p>
+              About
+            </p>
+
+            <h2 id="communityAboutTitle">
+              About this community
+            </h2>
+
+          </div>
+
+
+          <div id="communityAbout" class="community-about">
+          </div>
+
+        </section>
+
+
+        <section class="community-info-section" aria-labelledby="communityRulesTitle">
+
+          <div class="section-heading">
+
+            <p>
+              Guidelines
+            </p>
+
+            <h2 id="communityRulesTitle">
+              Community rules
+            </h2>
+
+          </div>
+
+
+          <div id="communityRules" class="community-rules">
+          </div>
+
+        </section>
+
+
+        <section class="community-info-section" aria-labelledby="communityLeaderTitle">
+
+          <div class="section-heading">
+
+            <p>
+              Community leader
+            </p>
+
+            <h2 id="communityLeaderTitle">
+              Created by
+            </h2>
+
+          </div>
+
+
+          <div class="community-leader">
+
+            <img id="communityLeaderImage" src="profile-placeholder.jpg" alt="Community leader"
+              class="community-leader-image">
+
+            <div>
+
+              <strong id="communityLeaderName">
+                CIVA Leader
+              </strong>
+
+              <p>
+                Community creator
+              </p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <section class="community-posts-section" aria-labelledby="communityPostsTitle">
+
+
+          <div class="section-heading">
+
+            <p>
+              Discussion
+            </p>
+
+            <div class="posts-heading-row">
+
+              <h2 id="communityPostsTitle">
+                Community posts
+              </h2>
+
+              <span id="communityPostCount">
+                0
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div id="communityPostsList" class="community-posts-list">
+
+            <div class="empty-community-posts">
+
+              <img src="post-placeholder.jpg" alt="" class="empty-post-image">
+
+              <h3>
+                No posts yet
+              </h3>
+
+              <p>
+                This community does not have
+                any posts yet.
+              </p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <section class="community-report-section" aria-label="Community safety">
+
+          <button type="button" id="reportCommunityButton" class="report-community-button">
+
+            Report Community
+
+          </button>
+
+          <p>
+            Report communities that violate
+            CIVA's rules or are unrelated to
+            peaceful civic participation.
+          </p>
+
+        </section>
+
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <script src="community-detail.js"></script>
+
+</body>
+
+</html>
