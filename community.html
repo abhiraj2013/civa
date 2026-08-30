@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <meta name="theme-color" content="#1565c0">
+
+  <meta name="color-scheme" content="light">
+
+  <meta name="description"
+    content="Explore CIVA communities and discover people discussing public issues, local concerns and civic topics.">
+
+  <meta name="keywords" content="CIVA, communities, civic communities, public issues, civic discussion">
+
+  <meta name="author" content="CIVA">
+
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="CIVA | Communities">
+
+  <meta property="og:description" content="Explore communities and public discussions on CIVA.">
+
+  <meta property="og:image" content="civa.png">
+
+
+  <meta name="twitter:card" content="summary">
+
+  <meta name="twitter:title" content="CIVA | Communities">
+
+  <meta name="twitter:description" content="Explore communities and public discussions on CIVA.">
+
+  <meta name="twitter:image" content="civa.png">
+
+
+  <link rel="icon" type="image/png" href="civa.png">
+
+  <link rel="apple-touch-icon" href="civa.png">
+
+
+  <title>
+    CIVA | Communities
+  </title>
+
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="community.css">
+
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+
+<body>
+
+
+  <div class="app">
+
+
+    <!-- =========================
+     TOP HEADER
+========================= -->
+
+    <header class="top-header">
+
+      <div class="header-inner">
+
+
+        <div class="header-left">
+
+          <a href="home.html" aria-label="CIVA Home">
+
+            <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+          </a>
+
+        </div>
+
+
+        <div class="header-center">
+
+          <a href="community.html" class="header-title">
+
+            Communities
+
+          </a>
+
+        </div>
+
+
+        <div class="header-right">
+
+          <button class="icon-button" id="navButton" type="button" aria-label="Open navigation" aria-controls="navMenu"
+            aria-expanded="false">
+
+
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
+
+              <line x1="4" y1="6" x2="20" y2="6">
+              </line>
+
+              <line x1="4" y1="12" x2="20" y2="12">
+              </line>
+
+              <line x1="4" y1="18" x2="20" y2="18">
+              </line>
+
+            </svg>
+
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+    <!-- =========================
+     NAVIGATION OVERLAY
+========================= -->
+
+    <div class="civa-nav-overlay" id="navOverlay" aria-hidden="true">
+    </div>
+
+
+
+    <!-- =========================
+     SIDE NAVIGATION
+========================= -->
+
+    <aside class="civa-nav-menu" id="navMenu" aria-hidden="true">
+
+
+      <div class="civa-nav-header">
+
+        <div>
+
+          <p class="civa-nav-label">
+            CIVA
+          </p>
+
+          <h2 class="civa-nav-title">
+            Navigation
+          </h2>
+
+        </div>
+
+
+        <button class="icon-button" id="navCloseButton" type="button" aria-label="Close navigation">
+
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+
+            <line x1="6" y1="6" x2="18" y2="18">
+            </line>
+
+            <line x1="18" y1="6" x2="6" y2="18">
+            </line>
+
+          </svg>
+
+
+        </button>
+
+      </div>
+
+
+
+      <nav class="civa-nav-links" aria-label="CIVA navigation">
+
+
+        <a href="home.html" class="civa-nav-link">
+
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M3 10.8L12 3l9 7.8">
+              </path>
+
+              <path d="M5.5 9.5V21h13V9.5">
+              </path>
+
+              <path d="M9.5 21v-6h5v6">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Home
+          </span>
+
+        </a>
+
+
+
+        <a href="community.html" class="civa-nav-link active">
+
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <circle cx="9" cy="8" r="3">
+              </circle>
+
+              <path d="M3.5 20a5.5 5.5 0 0 1 11 0">
+              </path>
+
+              <path d="M16 5.5a3 3 0 0 1 0 5.8">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Communities
+          </span>
+
+        </a>
+
+
+
+        <a href="news.html" class="civa-nav-link">
+
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M4 4h16v16H4z">
+              </path>
+
+              <path d="M8 8h8">
+              </path>
+
+              <path d="M8 12h8">
+              </path>
+
+              <path d="M8 16h5">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Latest News
+          </span>
+
+        </a>
+
+
+
+        <a href="creators.html" class="civa-nav-link">
+
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <circle cx="12" cy="8" r="4">
+              </circle>
+
+              <path d="M5 21a7 7 0 0 1 14 0">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Top Creators
+          </span>
+
+        </a>
+
+
+
+        <a href="leaders.html" class="civa-nav-link">
+
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M6 4h12v5a6 6 0 0 1-12 0V4z">
+              </path>
+
+              <path d="M9 20h6">
+              </path>
+
+              <path d="M12 15v5">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Top Leaders
+          </span>
+
+        </a>
+
+
+
+        <a href="about.html" class="civa-nav-link">
+
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <circle cx="12" cy="12" r="9">
+              </circle>
+
+              <line x1="12" y1="11" x2="12" y2="16">
+              </line>
+
+              <circle cx="12" cy="7.5" r="0.7" fill="currentColor" stroke="none">
+              </circle>
+
+            </svg>
+
+          </span>
+
+          <span>
+            About Us
+          </span>
+
+        </a>
+
+
+
+        <a href="licenses.html" class="civa-nav-link">
+
+
+          <span class="civa-nav-icon">
+
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <path d="M12 3l8 3v6c0 4.8-3.4 7.8-8 9-4.6-1.2-8-4.2-8-9V6l8-3z">
+              </path>
+
+              <path d="M9 12l2 2 4-4">
+              </path>
+
+            </svg>
+
+          </span>
+
+          <span>
+            Licenses
+          </span>
+
+        </a>
+
+
+      </nav>
+
+
+
+      <div class="civa-nav-footer">
+
+        <img src="civa.png" alt="CIVA" class="logo logo-sm" width="120" height="40">
+
+        <p>
+          Simple. Useful. Civic.
+        </p>
+
+      </div>
+
+
+    </aside>
+
+
+
+    <!-- =========================
+     MAIN
+========================= -->
+
+    <main class="community-main">
+
+      <div class="community-container">
+
+
+        <!-- INTRO -->
+
+        <section class="community-intro">
+
+          <p class="community-eyebrow">
+            CIVA COMMUNITIES
+          </p>
+
+          <h1>
+            Find people who care.
+          </h1>
+
+          <p>
+            Explore communities around public issues, local concerns and meaningful civic discussions.
+          </p>
+
+        </section>
+
+
+
+        <!-- SEARCH -->
+
+        <section class="community-search-section">
+
+          <label class="community-search" for="communitySearch">
+
+
+            <span class="community-search-icon">
+
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+
+                <circle cx="11" cy="11" r="7">
+                </circle>
+
+                <path d="M20 20l-4-4">
+                </path>
+
+              </svg>
+
+            </span>
+
+
+            <input id="communitySearch" type="search" placeholder="Search communities..." autocomplete="off">
+
+          </label>
+
+        </section>
+
+
+
+        <!-- CATEGORIES -->
+
+        <section class="community-categories">
+
+          <button type="button" class="community-filter active" data-category="all">
+
+            All
+
+          </button>
+
+
+          <button type="button" class="community-filter" data-category="local">
+
+            Local
+
+          </button>
+
+
+          <button type="button" class="community-filter" data-category="environment">
+
+            Environment
+
+          </button>
+
+
+          <button type="button" class="community-filter" data-category="education">
+
+            Education
+
+          </button>
+
+
+          <button type="button" class="community-filter" data-category="public">
+
+            Public Issues
+
+          </button>
+
+        </section>
+<!-- =========================
+     COMMUNITY TABS
+========================= -->
+
+<div class="community-tabs" role="tablist">
+
+
+  <button
+    type="button"
+    class="community-tab"
+    id="globalCommunitiesTab"
+    role="tab"
+    aria-selected="false"
+  >
+    Global Communities
+  </button>
+
+  <button
+    type="button"
+    class="community-tab active"
+    id="yourCommunitiesTab"
+    role="tab"
+    aria-selected="true"
+  >
+    Your Communities
+  </button>
+</div>
+
+        <!-- =========================
+     GLOBAL COMMUNITIES
+========================= -->
+
+        <section class="communities-section global-communities-section">
+
+          <div class="community-section-heading">
+
+            <div>
+
+              <p class="community-eyebrow">
+                DISCOVER
+              </p>
+
+              <h2>
+                Global Communities
+              </h2>
+
+            </div>
+
+            <span class="community-count" id="globalCommunityCount">
+              0
+            </span>
+
+          </div>
+
+
+          <div class="community-grid" id="communityGrid">
+          </div>
+
+
+          <div class="community-empty" id="globalCommunityEmpty" hidden>
+
+            <p>
+              No communities found.
+            </p>
+
+            <span>
+              Try another search or category.
+            </span>
+
+          </div>
+
+        </section>
+
+        <!-- =========================
+     YOUR COMMUNITIES
+========================= -->
+
+        <section
+  class="communities-section your-communities-section"
+  id="yourCommunitiesSection"
+>
+          <div class="community-section-heading">
+
+            <div>
+
+              <p class="community-eyebrow">
+                YOUR
+              </p>
+
+              <h2>
+                Your Communities
+              </h2>
+
+            </div>
+
+            <span class="community-count" id="yourCommunityCount">
+              0
+            </span>
+
+          </div>
+
+
+          <div class="community-grid" id="yourCommunityGrid">
+          </div>
+
+
+          <div class="community-empty" id="yourCommunityEmpty">
+
+            <p>
+              You haven't joined any communities yet.
+            </p>
+
+            <span>
+              Join a community from Global Communities.
+            </span>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =========================
+     COMMUNITY DETAILS
+========================= -->
+
+        <div class="community-detail-overlay" id="communityDetailOverlay" hidden>
+
+
+          <section class="community-detail" role="dialog" aria-modal="true" aria-labelledby="communityDetailTitle">
+
+
+            <button type="button" class="community-detail-close" id="communityDetailClose"
+              aria-label="Close community details">
+
+              ×
+
+            </button>
+
+
+            <img src="community-placeholder.jpg" alt="" id="communityDetailImage" class="community-detail-image">
+
+
+            <div class="community-detail-content">
+
+
+              <p class="community-eyebrow" id="communityDetailCategory">
+                COMMUNITY
+              </p>
+
+
+              <h2 id="communityDetailTitle">
+                Community
+              </h2>
+
+
+              <p id="communityDetailDescription">
+              </p>
+
+
+              <div class="community-detail-meta">
+
+
+                <span>
+                  <span id="communityDetailMembers">
+                    0
+                  </span>
+                  members
+                </span>
+
+
+                <span id="communityDetailStatus">
+                  Not joined
+                </span>
+
+
+              </div>
+
+
+              <button type="button" class="community-detail-join" id="communityDetailJoin">
+
+                Join
+
+              </button>
+
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+        <!-- =========================
+     NO SEARCH RESULT
+========================= -->
+
+        <div class="community-search-empty" id="communitySearchEmpty" hidden>
+
+          <p>
+            No matching communities found.
+          </p>
+
+        </div>
+        <!-- =========================
+     ABOUT COMMUNITIES
+========================= -->
+
+        <section class="community-info-card">
+
+          <div class="community-info-icon">
+
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+              <circle cx="12" cy="12" r="9">
+              </circle>
+
+              <path d="M12 10v6">
+              </path>
+
+              <circle cx="12" cy="7" r=".7" fill="currentColor" stroke="none">
+              </circle>
+
+            </svg>
+
+          </div>
+
+
+          <div>
+
+            <h3>
+              About CIVA Communities
+            </h3>
+
+            <p>
+              Communities bring people together around public issues,
+              local concerns and ideas for positive civic participation.
+            </p>
+
+          </div>
+
+        </section>
+
+
+      </div>
+
+    </main>
+
+
+
+    <!-- =========================
+     BOTTOM NAVIGATION
+========================= -->
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+
+
+      <a href="home.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon">
+
+          <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+            <path d="M3 10.8L12 3l9 7.8">
+            </path>
+
+            <path d="M5.5 9.5V21h13V9.5">
+            </path>
+
+            <path d="M9.5 21v-6h5v6">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Home
+        </span>
+
+      </a>
+
+
+
+      <a href="community.html" class="bottom-nav-item active">
+
+        <span class="bottom-nav-icon">
+
+          <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+            <circle cx="9" cy="8" r="3">
+            </circle>
+
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0">
+            </path>
+
+            <path d="M16 5.5a3 3 0 0 1 0 5.8">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Communities
+        </span>
+
+      </a>
+
+
+
+      <a href="account.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon">
+
+          <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+
+            <circle cx="12" cy="8" r="3.5">
+            </circle>
+
+            <path d="M5 21a7 7 0 0 1 14 0">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Account
+        </span>
+
+      </a>
+
+
+    </nav>
+
+
+
+    <!-- =========================
+     SCRIPTS
+========================= -->
+
+    <script src="navigation.js">
+</script>
+
+    <script src="community.js">
+</script>
+
+
+  </div>
+
+
+</body>
+
+</html>
