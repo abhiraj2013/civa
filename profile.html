@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Your CIVA profile. Manage your account, posts, communities and civic activity.">
+
+  <meta name="theme-color" content="#0d6efd">
+
+  <title>CIVA | Profile</title>
+
+  <link rel="stylesheet" href="profile.css">
+
+</head>
+
+<body>
+
+  <div class="profile-page" id="profilePage">
+
+    <header class="profile-header">
+
+      <div class="profile-header-inner">
+
+        <a href="index.html" class="profile-brand" aria-label="CIVA Home">
+
+          <img src="civa.png" alt="CIVA" class="profile-brand-logo">
+
+          <span>CIVA</span>
+
+        </a>
+
+
+        <a href="account.html" class="profile-account-link" aria-label="Account">
+
+          Account
+
+        </a>
+
+      </div>
+
+    </header>
+
+
+    <main class="profile-main">
+
+      <section class="profile-hero" aria-labelledby="profileTitle">
+
+        <div class="profile-avatar-area">
+
+          <div class="profile-avatar-wrapper">
+
+            <img src="profile-placeholder.jpg" alt=" Profile picture" class="profile-avatar" id="profileAvatar">
+
+          </div>
+
+          <button type="button" class="change-photo-button" id="changePhotoButton">
+
+            Change photo
+
+          </button>
+
+          <input type="file" id="profilePhotoInput" accept="image/jpeg,image/png,image/webp" hidden>
+
+        </div>
+
+
+        <div class="profile-main-info">
+
+          <p class="profile-label">
+            CIVA Profile
+          </p>
+
+          <h1 id="profileTitle">
+            Your Profile
+          </h1>
+
+          <p class="profile-email" id="profileEmail">
+            Loading...
+          </p>
+
+          <button type="button" class="edit-profile-button" id="editProfileButton">
+            <a href="edit.html">
+
+              Edit Profile
+            </a>
+
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <section class="profile-details" aria-labelledby="detailsTitle">
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="section-label">
+              Account information
+            </p>
+
+            <h2 id="detailsTitle">
+              Your Information
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="profile-info-grid">
+
+          <div class="info-card">
+
+            <span class="info-card-label">
+              Full name
+            </span>
+
+            <strong id="profileName">
+              —
+            </strong>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <span class="info-card-label">
+              Email
+            </span>
+
+            <strong id="profileEmailDetail">
+              —
+            </strong>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <span class="info-card-label">
+              Date of birth
+            </span>
+
+            <strong id="profileDob">
+              —
+            </strong>
+
+          </div>
+
+
+          <div class="info-card">
+
+            <span class="info-card-label">
+              Member since
+            </span>
+
+            <strong id="profileJoined">
+              —
+            </strong>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="profile-stats" aria-labelledby="statsTitle">
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="section-label">
+              Your CIVA activity
+            </p>
+
+            <h2 id="statsTitle">
+              Activity
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+          <article class="stat-card">
+
+            <span class="stat-number" id="postCount">
+              0
+            </span>
+
+            <span class="stat-label">
+              Posts
+            </span>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span class="stat-number" id="supportCount">
+              0
+            </span>
+
+            <span class="stat-label">
+              Supports
+            </span>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span class="stat-number" id="communityCount">
+              0
+            </span>
+
+            <span class="stat-label">
+              Communities
+            </span>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span class="stat-number" id="joinCount">
+              0
+            </span>
+
+            <span class="stat-label">
+              Community joins
+            </span>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <section class="profile-actions" aria-labelledby="actionsTitle">
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="section-label">
+              Get involved
+            </p>
+
+            <h2 id="actionsTitle">
+              Your CIVA Actions
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="action-grid">
+
+          <a href="post.html" class="action-card">
+
+            <span class="action-icon">
+              +
+            </span>
+
+            <span class="action-content">
+
+              <strong>
+                Create a Post
+              </strong>
+
+              <small>
+                Share a public problem
+              </small>
+
+            </span>
+
+          </a>
+
+
+          <a href="create-community.html" class="action-card">
+
+            <span class="action-icon">
+              +
+            </span>
+
+            <span class="action-content">
+
+              <strong>
+                Create Community
+              </strong>
+
+              <small>
+                Build a community around an issue
+              </small>
+
+            </span>
+
+          </a>
+
+
+          <a href="creators.html" class="action-card">
+
+            <span class="action-icon">
+              #
+            </span>
+
+            <span class="action-content">
+
+              <strong>
+                Creator Rank
+              </strong>
+
+              <small>
+                View your support ranking
+              </small>
+
+            </span>
+
+          </a>
+
+
+          <a href="leaders.html" class="action-card">
+
+            <span class="action-icon">
+              #
+            </span>
+
+            <span class="action-content">
+
+              <strong>
+                Leader Rank
+              </strong>
+
+              <small>
+                View your community ranking
+              </small>
+
+            </span>
+
+          </a>
+
+        </div>
+
+      </section>
+      <section class="profile-content" aria-labelledby="contentTitle">
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="section-label">
+              Your contribution
+            </p>
+
+            <h2 id="contentTitle">
+              Your Content
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="content-tabs">
+
+          <button type="button" class="content-tab active" data-content="posts">
+
+            Your Posts
+
+          </button>
+
+
+          <button type="button" class="content-tab" data-content="supported">
+
+            Supported
+
+          </button>
+
+
+          <button type="button" class="content-tab" data-content="communities">
+
+            Communities
+
+          </button>
+
+        </div>
+
+
+        <div class="content-panel active" id="postsPanel" data-panel="posts">
+
+          <div class="empty-content" id="postsEmpty">
+
+            <div class="empty-icon">
+              +
+            </div>
+
+            <h3>
+              No posts yet
+            </h3>
+
+            <p>
+              Share a public problem with the CIVA community.
+            </p>
+
+            <a href="post.html" class="empty-action">
+
+              Create your first post
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="content-panel" id="supportedPanel" data-panel="supported">
+
+          <div class="empty-content" id="supportedEmpty">
+
+            <div class="empty-icon">
+              ✓
+            </div>
+
+            <h3>
+              No supported posts yet
+            </h3>
+
+            <p>
+              Posts you support will appear here.
+            </p>
+
+            <a href="home.html" class="empty-action">
+
+              Explore CIVA
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="content-panel" id="communitiesPanel" data-panel="communities">
+
+          <div class="empty-content" id="communitiesEmpty">
+
+            <div class="empty-icon">
+              +
+            </div>
+
+            <h3>
+              No communities yet
+            </h3>
+
+            <p>
+              Communities you create or join will appear here.
+            </p>
+
+            <a href="community.html" class="empty-action">
+
+              Explore communities
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="profile-settings" aria-labelledby="settingsTitle">
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="section-label">
+              Account
+            </p>
+
+            <h2 id="settingsTitle">
+              Profile Settings
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="settings-list">
+
+          <button type="button" class="setting-item" id="editDetailsButton">
+            <a href="edit.html">
+
+              <span class="setting-content">
+
+                <strong>
+                  Edit profile details
+                </strong>
+
+                <small>
+                  Update your name and profile information
+                </small>
+
+              </span>
+
+              <span class="setting-arrow">
+                →
+              </span>
+            </a>
+
+          </button>
+
+
+          <a href="settings.html" class="setting-item">
+
+            <span class="setting-content">
+
+              <strong>
+                Account settings
+              </strong>
+
+              <small>
+                Manage your CIVA account
+              </small>
+
+            </span>
+
+            <span class="setting-arrow">
+              →
+            </span>
+
+          </a>
+
+
+          <a href="licenses.html" class="setting-item">
+
+            <span class="setting-content">
+
+              <strong>
+                Privacy
+              </strong>
+
+              <small>
+                Learn how your information is handled
+              </small>
+
+            </span>
+
+            <span class="setting-arrow">
+              →
+            </span>
+
+          </a>
+
+
+          <button type="button" class="setting-item danger" id="signOutButton">
+
+            <span class="setting-content">
+
+              <strong>
+                Sign out
+              </strong>
+
+              <small>
+                Sign out from this device
+              </small>
+
+            </span>
+
+            <span class="setting-arrow">
+              →
+            </span>
+
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <div class="profile-message" id="profileMessage" role="status" aria-live="polite">
+      </div>
+
+    </main>
+
+
+    <nav class="bottom-navigation" aria-label="Main navigation">
+
+      <a href="home.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M3 10.8L12 3l9 7.8"></path>
+
+            <path d="M5.5 9.5V21h13V9.5"></path>
+
+            <path d="M9.5 21v-6h5v6"></path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Home
+        </span>
+
+      </a>
+
+
+      <a href="community.html" class="bottom-nav-item">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="9" cy="8" r="3">
+            </circle>
+
+            <path d="M3.5 20a5.5 5.5 0 0 1 11 0">
+            </path>
+
+            <path d="M16 5.5a3 3 0 0 1 0 5.8">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Community
+        </span>
+
+      </a>
+
+
+      <a href="account.html" class="bottom-nav-item active">
+
+        <span class="bottom-nav-icon" aria-hidden="true">
+
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+            stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="12" cy="8" r="4">
+            </circle>
+
+            <path d="M5 21a7 7 0 0 1 14 0">
+            </path>
+
+          </svg>
+
+        </span>
+
+        <span>
+          Account
+        </span>
+
+      </a>
+
+    </nav>
+
+  </div>
+
+  <script src="civa-data.js"></script>
+  <script src="navigation.js"></script>
+  <script src="profile.js"></script>
+
+</body>
+
+</html>
