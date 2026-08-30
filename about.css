@@ -1,0 +1,573 @@
+.about-main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 34px 20px 110px;
+}
+
+.about-container {
+    width: min(100%, 920px);
+    margin: 0 auto;
+}
+
+.about-hero {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 60px;
+}
+
+.about-hero-logo {
+    width: 120px;
+    height: 120px;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto 22px;
+}
+
+.about-eyebrow,
+.about-card-label {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.about-hero h1 {
+    margin: 0;
+    font-size: clamp(30px, 5vw, 46px);
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.about-hero > p:last-child {
+    max-width: 680px;
+    margin: 17px auto 0;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.about-section {
+    width: 100%;
+    margin-bottom: 58px;
+}
+
+.about-section-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.about-section-number {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #edf5ff;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.about-section-heading p {
+    margin: 1px 0 4px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.about-section-heading h2 {
+    margin: 0;
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.about-card {
+    padding: 24px;
+    border: 1px solid #e0e8f0;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(20, 60, 100, 0.055);
+}
+
+.about-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.about-card p + p {
+    margin-top: 12px;
+}
+
+.about-purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.about-purpose-card {
+    padding: 21px;
+    border: 1px solid #e0e8f0;
+    border-radius: 19px;
+    background: #ffffff;
+    box-shadow: 0 5px 18px rgba(20, 60, 100, 0.05);
+}
+
+.about-purpose-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+    border-radius: 13px;
+    background: #edf5ff;
+}
+
+.about-purpose-card h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 750;
+}
+
+.about-purpose-card p {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.about-journey {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.about-journey-line {
+    position: absolute;
+    top: 24px;
+    bottom: 24px;
+    left: 21px;
+    width: 1px;
+    background: #d9e5f0;
+}
+
+.about-journey-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 43px minmax(0, 1fr);
+    gap: 15px;
+}
+
+.about-journey-dot {
+    position: relative;
+    z-index: 1;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background: #1565c0;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    box-shadow: 0 2px 9px rgba(21, 101, 192, 0.2);
+}
+
+.about-journey-content {
+    min-width: 0;
+    padding: 21px;
+    border: 1px solid #e0e8f0;
+    border-radius: 19px;
+    background: #ffffff;
+    box-shadow: 0 5px 18px rgba(20, 60, 100, 0.05);
+}
+
+.about-brand-image {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.about-brand-image img {
+    max-width: 190px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.about-journey-content h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 800;
+}
+
+.about-journey-content > p {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.about-direction-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.about-direction-card {
+    padding: 24px;
+    border: 1px solid #e0e8f0;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 5px 18px rgba(20, 60, 100, 0.05);
+}
+
+.about-direction-icon {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+    border-radius: 14px;
+    background: #edf5ff;
+}
+
+.about-direction-card h3 {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 800;
+}
+
+.about-direction-card > p:last-child {
+    margin: 9px 0 0;
+    font-size: 13px;
+    line-height: 1.7;
+}
+.about-steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.about-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px;
+    border: 1px solid #e0e8f0;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 5px 18px rgba(20, 60, 100, 0.045);
+}
+
+.about-step-number {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: #edf5ff;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.about-step h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 800;
+}
+
+.about-step p {
+    margin: 6px 0 0;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.about-principles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.about-principle {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 19px;
+    border: 1px solid #e0e8f0;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 5px 18px rgba(20, 60, 100, 0.045);
+}
+
+.about-principle > span {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #f0f6fc;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.about-principle h3 {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 800;
+}
+
+.about-principle p {
+    margin: 5px 0 0;
+    font-size: 12.5px;
+    line-height: 1.65;
+}
+
+.about-brand-summary {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    align-items: center;
+    gap: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 28px;
+    border: 1px solid #d9e7f5;
+    border-radius: 22px;
+    background: #f7fbff;
+}
+
+.about-brand-summary-image {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.about-brand-summary-image img {
+    max-width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.about-brand-summary-content {
+    min-width: 0;
+}
+
+.about-brand-summary-content h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 800;
+}
+
+.about-brand-summary-content > p:last-child {
+    margin: 10px 0 0;
+    max-width: 650px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+
+    .about-main {
+        padding: 26px 14px 100px;
+    }
+
+    .about-hero {
+        margin-bottom: 46px;
+    }
+
+    .about-hero-logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 18px;
+    }
+
+    .about-hero h1 {
+        font-size: 31px;
+    }
+
+    .about-hero > p:last-child {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .about-section {
+        margin-bottom: 46px;
+    }
+
+    .about-section-heading {
+        gap: 11px;
+        margin-bottom: 16px;
+    }
+
+    .about-section-number {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+        border-radius: 11px;
+    }
+
+    .about-section-heading h2 {
+        font-size: 21px;
+    }
+
+    .about-purpose-grid {
+        grid-template-columns: 1fr;
+        gap: 11px;
+    }
+
+    .about-card,
+    .about-purpose-card,
+    .about-direction-card,
+    .about-journey-content {
+        padding: 19px;
+    }
+
+    .about-journey-item {
+        grid-template-columns: 37px minmax(0, 1fr);
+        gap: 11px;
+    }
+
+    .about-journey-dot {
+        width: 37px;
+        height: 37px;
+        font-size: 9px;
+    }
+
+    .about-journey-line {
+        left: 18px;
+    }
+
+    .about-brand-image {
+        height: 82px;
+    }
+
+    .about-brand-image img {
+        max-width: 155px;
+        max-height: 75px;
+    }
+
+    .about-direction-grid {
+        grid-template-columns: 1fr;
+        gap: 11px;
+    }
+
+    .about-steps {
+        grid-template-columns: 1fr;
+        gap: 11px;
+    }
+
+    .about-principles {
+        grid-template-columns: 1fr;
+        gap: 11px;
+    }
+
+    .about-brand-summary {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 21px;
+        border-radius: 19px;
+        text-align: center;
+    }
+
+    .about-brand-summary-image {
+        width: 105px;
+        height: 105px;
+        margin: 0 auto;
+    }
+
+    .about-brand-summary-image img {
+        max-width: 85px;
+        max-height: 85px;
+    }
+
+    .about-brand-summary-content h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .about-main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .about-hero h1 {
+        font-size: 28px;
+    }
+
+    .about-section-heading h2 {
+        font-size: 19px;
+    }
+
+    .about-card,
+    .about-purpose-card,
+    .about-direction-card,
+    .about-journey-content,
+    .about-step,
+    .about-principle {
+        padding: 16px;
+    }
+
+    .about-journey-item {
+        grid-template-columns: 34px minmax(0, 1fr);
+    }
+
+    .about-journey-dot {
+        width: 34px;
+        height: 34px;
+    }
+
+    .about-journey-line {
+        left: 16.5px;
+    }
+
+    .about-brand-summary-content h2 {
+        font-size: 18px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-card,
+    .about-purpose-card,
+    .about-direction-card,
+    .about-journey-content,
+    .about-step,
+    .about-principle,
+    .about-brand-summary {
+        transition: none;
+    }
+
+}
